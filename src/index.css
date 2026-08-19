@@ -105,7 +105,7 @@
        FONTS
        ========================================================== */
 
-    --font-heading: 'Cinzel', serif;
+    --font-heading: 'Poppins', sans-serif;
     --font-body: 'Montserrat', sans-serif;
 
 
@@ -237,6 +237,20 @@
     min-height: 100vh;
 
     isolation: isolate;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  .font-black, .font-extrabold {
+    font-weight: 600 !important;
+  }
+
+  .font-bold {
+    font-weight: 600 !important;
   }
 
 

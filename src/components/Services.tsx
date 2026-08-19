@@ -123,7 +123,7 @@ const ServiceCard = memo(({
           <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-110" style={{ background: "rgba(var(--primary-rgb), 0.08)", border: "1px solid rgba(var(--primary-rgb), 0.2)" }}>
             <Icon className="w-5 h-5" style={{ color: "var(--primary-hex)" }} />
           </div>
-          <h3 className="text-lg font-black transition-colors duration-300 leading-tight text-foreground group-hover:text-[var(--primary-hex)]">
+          <h3 className="text-lg font-semibold transition-colors duration-300 leading-tight text-foreground group-hover:text-[var(--primary-hex)]">
             {service.title}
           </h3>
         </div>
@@ -141,7 +141,7 @@ const ServiceCard = memo(({
           ))}
         </div>
 
-        <div className="mt-auto flex items-center gap-2 text-sm font-black uppercase tracking-widest transition-colors duration-300" style={{ color: "var(--primary-hex)" }}>
+        <div className="mt-auto flex items-center gap-2 text-sm font-semibold uppercase tracking-widest transition-colors duration-300" style={{ color: "var(--primary-hex)" }}>
           <span>Get Free Estimate</span>
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300 shrink-0" />
         </div>
@@ -177,53 +177,39 @@ const Services = () => {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-5" style={{ background: "rgba(var(--primary-rgb), 0.08)", border: "1px solid rgba(var(--primary-rgb), 0.25)" }}>
                 <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: "var(--primary-hex)" }} />
-                <span className="text-[11px] font-black uppercase tracking-[0.2em]" style={{ color: "var(--primary-hex)" }}>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.2em]" style={{ color: "var(--primary-hex)" }}>
                   {badge}
                 </span>
               </div>
 
-              <h2 className="text-4xl md:text-5xl xl:text-[3.25rem] font-black leading-[1.1] tracking-tight" style={{ color: "var(--heading-color)", fontFamily: "var(--font-heading)" }}>
+              <h2 className="text-4xl md:text-5xl xl:text-[3.25rem] font-semibold leading-[1.1] tracking-tight" style={{ color: "var(--heading-color)", fontFamily: "var(--font-heading)" }}>
                 {headline.prefix}{" "}
                 <span style={{ color: "var(--primary-hex)" }}>{headline.highlight}</span>{" "}
                 <span style={{ color: "var(--body-text-color)" }}>{headline.suffix}</span>
               </h2>
             </motion.div>
 
-            {/* RIGHT: Description + Stat cards */}
+            {/* RIGHT: Description */}
             <motion.div
               initial={{ opacity: 0, x: 24 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.55, delay: 0.1 }}
-              className="flex flex-col gap-8"
+              className="flex flex-col gap-6"
             >
-              <p className="text-base md:text-lg leading-relaxed font-medium" style={{ color: "var(--body-text-color)" }}>
+              <p className="text-base md:text-lg leading-relaxed font-normal text-slate-600">
                 {description[0]}
               </p>
-
-              {/* Stat cards — gold top bar */}
-              <div className="grid grid-cols-3 gap-3">
-                {stats.map((stat: any) => (
-                  <div
-                    key={stat.label}
-                    className="relative rounded-xl p-4 overflow-hidden transition-all duration-300"
-                    style={{ background: "var(--card-bg)", border: "1px solid var(--graphite-color)" }}
-                  >
-                    <div className="absolute top-0 left-0 right-0 h-[3px] rounded-t-xl" style={{ background: "linear-gradient(90deg, var(--primary-hex), var(--primary-hover-hex))" }} />
-                    <div className="text-2xl md:text-3xl font-black leading-none mb-1 pt-1" style={{ color: "var(--primary-hex)" }}>
-                      <AnimatedNumber value={stat.value} suffix={stat.suffix} />
-                    </div>
-                    <div className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest leading-tight" style={{ color: "var(--silver-color)" }}>
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
+              {description[1] && (
+                <p className="text-sm md:text-base leading-relaxed text-slate-500">
+                  {description[1]}
+                </p>
+              )}
             </motion.div>
           </div>
 
           {/* Separator line */}
-          <div className="mt-12 h-px" style={{ background: "linear-gradient(to right, rgba(var(--primary-rgb), 0.25), var(--graphite-color), transparent)" }} />
+          <div className="mt-12 h-px bg-slate-200" />
         </div>
 
         {/* ══ SERVICES GRID ══════════════════════════════════════ */}
@@ -244,13 +230,13 @@ const Services = () => {
           transition={{ duration: 0.65 }}
           className="relative overflow-hidden rounded-3xl"
           style={{
-            background: "linear-gradient(135deg, #0F172A 0%, #001B36 100%)",
-            boxShadow: "0 25px 60px rgba(8, 102, 213, 0.15)",
-            border: "1px solid rgba(var(--primary-rgb), 0.3)"
+            background: "linear-gradient(135deg, #0B1528 0%, #001B36 100%)",
+            boxShadow: "0 25px 60px rgba(0, 0, 0, 0.35)",
+            border: "1px solid rgba(27, 91, 192, 0.4)"
           }}
         >
           {/* Subtle Ambient Glow and Grid */}
-          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
+          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-blue-500/20 blur-3xl pointer-events-none" />
           <div
             className="absolute inset-0 opacity-[0.06] pointer-events-none"
             style={{
@@ -265,18 +251,18 @@ const Services = () => {
 
               {/* Left text */}
               <div className="text-center lg:text-left max-w-xl">
-                <div className="inline-flex items-center gap-2.5 mb-5 rounded-full px-4 py-2 bg-primary/15 border border-primary/30">
-                  <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                  <span className="text-[11px] font-black uppercase tracking-[0.2em] text-primary">
+                <div className="inline-flex items-center gap-2.5 mb-5 rounded-full px-4 py-2 bg-blue-500/20 border border-blue-400/30">
+                  <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+                  <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-300">
                     Free Consultation Available
                   </span>
                 </div>
 
-                <h3 className="text-3xl md:text-4xl xl:text-5xl font-black leading-[1.08] tracking-tight mb-4 text-white" style={{ fontFamily: "var(--font-heading)" }}>
+                <h3 className="text-3xl md:text-4xl xl:text-5xl font-semibold leading-[1.12] tracking-tight mb-4 text-white" style={{ fontFamily: "var(--font-heading)" }}>
                   {cta.title}
                 </h3>
 
-                <p className="text-base md:text-lg leading-relaxed mb-6 text-slate-300">
+                <p className="text-base md:text-lg leading-relaxed mb-6 text-slate-200">
                   {cta.description}
                 </p>
 
@@ -284,10 +270,10 @@ const Services = () => {
                 <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6">
                   {["Licensed & Insured", "Locally Owned", "Free Estimates"].map((t) => (
                     <div key={t} className="flex items-center gap-2">
-                      <div className="w-4 h-4 rounded-full flex items-center justify-center shrink-0 bg-primary/20 border border-primary/40">
-                        <CheckCircle className="w-2.5 h-2.5 text-primary" />
+                      <div className="w-4 h-4 rounded-full flex items-center justify-center shrink-0 bg-blue-500/20 border border-blue-400/40">
+                        <CheckCircle className="w-2.5 h-2.5 text-blue-300" />
                       </div>
-                      <span className="text-xs font-semibold text-slate-300">{t}</span>
+                      <span className="text-xs font-medium text-slate-200">{t}</span>
                     </div>
                   ))}
                 </div>
@@ -301,7 +287,7 @@ const Services = () => {
                   href="#contact"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
-                  className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-bold transition-all duration-300 bg-primary text-white hover:bg-primary/90 shadow-lg shadow-primary/30 text-center"
+                  className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold transition-all duration-300 bg-primary text-white hover:bg-secondary shadow-lg shadow-primary/40 text-center"
                 >
                   <span>Get Free Quote</span>
                   <ArrowRight className="w-5 h-5" />
@@ -312,9 +298,9 @@ const Services = () => {
                   href="tel:+14026098072"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
-                  className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-bold transition-all duration-300 bg-white/10 text-white border border-white/20 hover:bg-white hover:text-slate-900 text-center backdrop-blur-sm"
+                  className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold transition-all duration-300 bg-white/10 text-white border border-white/20 hover:bg-white hover:text-slate-900 text-center backdrop-blur-sm shadow-md"
                 >
-                  <Phone className="w-5 h-5 text-primary" />
+                  <Phone className="w-5 h-5 text-blue-300" />
                   <span>(402) 609-8072</span>
                 </motion.a>
               </div>

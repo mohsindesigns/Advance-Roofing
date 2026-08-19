@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Home, Sun, Droplets } from "lucide-react";
 
-import heroBg from "@/assets/roofingbg.webp";
+import heroBg from "@/assets/hero-bg.jpg";
 import {
   FiArrowRight,
   FiChevronDown,
@@ -591,14 +591,14 @@ const Hero = () => {
           initial={{ scale: 1.05 }}
           animate={{ scale: 1 }}
           transition={{ duration: 10, ease: "easeOut" }}
-          className="w-full h-full object-cover absolute inset-0 will-change-transform opacity-35"
+          className="w-full h-full object-cover absolute inset-0 will-change-transform opacity-75"
         />
-        {/* Soft directional gradient: comfortable slate tone on left, blending to image */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#1E293B]/75 to-[#1E293B]/30" />
+        {/* Directional gradient: Rich dark on left for text readability, clear image on right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#070D18]/95 via-[#0A1222]/80 via-45% to-transparent" />
 
         {/* Subtle radial ambient blue glows */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-primary/20 blur-3xl" />
-        <div className="absolute top-1/3 -left-20 w-[500px] h-[500px] rounded-full bg-blue-900/30 blur-3xl" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-primary/15 blur-3xl" />
+        <div className="absolute top-1/3 -left-20 w-[500px] h-[500px] rounded-full bg-blue-900/25 blur-3xl" />
       </div>
 
       <div className="relative z-10 min-h-screen flex items-center pt-28 pb-16 lg:py-24">
@@ -624,7 +624,7 @@ const Hero = () => {
 
               {/* Main Headline with Crisp White & Soft Blue Accent */}
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.25rem] font-black leading-[1.08] tracking-tight uppercase"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-medium leading-[1.15] tracking-tight"
                 style={{ fontFamily: "var(--font-heading)" }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}

@@ -646,43 +646,49 @@ const KnowledgeCard = () => {
   return (
     <div className="relative mt-16 md:mt-24 lg:mt-32">
       {/* CTA Container */}
-      <div className="relative rounded-3xl overflow-hidden">
-        {/* Luxury Dark-to-Graphite Background */}
+      <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+        {/* Luxury Dark Blue-Navy Background */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 rounded-3xl"
           style={{
-            background: "linear-gradient(135deg, #1E293B 0%, #0F172A 100%)",
-            boxShadow: "0 25px 60px rgba(0,0,0,0.15)",
-            border: "1px solid rgba(249, 115, 22, 0.2)"
+            background: "linear-gradient(135deg, #070F1E 0%, #001B36 100%)",
+            boxShadow: "0 25px 60px rgba(0,0,0,0.4)",
+            border: "1px solid rgba(27, 91, 192, 0.4)"
           }}
         />
 
+        {/* Ambient Glow */}
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-blue-500/15 blur-3xl pointer-events-none" />
+
         {/* Technical Grid Pattern */}
         <div
-          className="absolute inset-0 opacity-[0.08]"
+          className="absolute inset-0 rounded-3xl opacity-[0.06] overflow-hidden pointer-events-none"
           style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px)`,
             backgroundSize: '45px 45px'
           }}
         />
 
         {/* Main Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-6 md:py-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-10 md:py-14">
 
-          {/* Desktop Layout - Two columns with floating image */}
-          <div className="hidden lg:grid lg:grid-cols-2 gap-8 items-center">
+          {/* Layout - Two columns with aligned illustration */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Column - Text Content */}
-            <div className="max-w-xl">
+            <div className="lg:col-span-7 text-center lg:text-left">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="inline-block mb-6"
+                className="inline-block mb-4"
               >
-                <span className="px-4 py-2 text-sm font-bold bg-background/10 border border-white/20 rounded-lg text-white backdrop-blur-sm">
-                  STILL HAVE QUESTIONS?
-                </span>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30">
+                  <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+                  <span className="text-xs font-semibold text-blue-300 uppercase tracking-widest">
+                    STILL HAVE QUESTIONS?
+                  </span>
+                </div>
               </motion.div>
 
               <motion.h2
@@ -690,7 +696,7 @@ const KnowledgeCard = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.2] tracking-tight text-white [&_span]:text-white"
+                className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-[1.15] tracking-tight text-white [&_span]:text-white mb-4"
                 dangerouslySetInnerHTML={{ __html: knowledgeCard.title }}
               />
 
@@ -699,7 +705,7 @@ const KnowledgeCard = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="mt-4 text-white font-medium text-lg max-w-lg"
+                className="text-slate-200 font-normal text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8"
               >
                 {knowledgeCard.description}
               </motion.p>
@@ -709,134 +715,54 @@ const KnowledgeCard = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="mt-8 flex flex-wrap gap-4"
+                className="flex flex-col sm:flex-row gap-3.5 justify-center lg:justify-start mb-8"
               >
                 {knowledgeCard.buttons.map((button: any, idx: number) => (
                   <motion.a
                     key={idx}
                     href={button.href}
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.98 }}
                     className={`
-                      px-8 py-3.5 rounded-full font-bold transition-all duration-300 shadow-lg
-                      flex items-center gap-2
+                      px-7 py-3.5 rounded-xl font-semibold transition-all duration-300 shadow-md
+                      flex items-center justify-center gap-2.5 text-center
                       ${button.primary
-                        ? 'bg-primary text-dark hover:bg-secondary shadow-[0_10px_40px_rgba(0,0,0,0.3)]'
-                        : 'bg-transparent text-white border-2 border-white/20 hover:bg-white/5 backdrop-blur-sm'
+                        ? 'bg-primary text-white hover:bg-secondary shadow-lg shadow-primary/40'
+                        : 'bg-white/10 text-white border border-white/20 hover:bg-white hover:text-slate-900 backdrop-blur-sm'
                       }
                     `}
                   >
-                    {button.text}
+                    <span>{button.text}</span>
                     <Icons.ArrowRight />
                   </motion.a>
                 ))}
               </motion.div>
 
               {/* Trust Indicators */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="mt-8 flex gap-4"
-              >
+              <div className="flex flex-wrap justify-center lg:justify-start gap-3">
                 <TrustBadge label="Quick Response" color="green" />
                 <TrustBadge label="Expert Support" color="blue" />
                 <TrustBadge label="24/7 Available" color="blue" />
-              </motion.div>
+              </div>
             </div>
 
-            {/* Right Column - Floating FAQ Vector */}
-            <div className="relative">
+            {/* Right Column - Prominent Visual */}
+            <div className="lg:col-span-5 hidden lg:flex items-center justify-center relative">
               <motion.div
-                animate={{ y: [0, -8, 0] }}
+                animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-[-33rem] w-[85%] lg:w-[90%]"
-
-                style={{ right: '5%' }}
+                className="w-full max-w-[480px] flex items-center justify-center"
               >
                 <img
                   src={faqvector}
                   alt="FAQ Support"
                   loading="eager"
-                  className="w-full h-auto object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.4)] will-change-transform transform-gpu"
+                  className="w-full h-auto max-h-[460px] object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.6)] will-change-transform transform-gpu scale-110"
                 />
               </motion.div>
             </div>
           </div>
-
-          {/* Mobile Layout - Centered text, no image */}
-          <div className="lg:hidden text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="inline-block mb-4"
-            >
-              <span className="px-3 py-1.5 text-xs font-semibold bg-background/20 border border-white/30 rounded-full text-white/90 backdrop-blur-sm">
-                STILL HAVE QUESTIONS?
-              </span>
-            </motion.div>
-
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl sm:text-4xl font-bold leading-[1.2] text-white [&_span]:text-white"
-              dangerouslySetInnerHTML={{ __html: knowledgeCard.title }}
-            />
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-3 text-white font-medium text-base max-w-md mx-auto"
-            >
-              {knowledgeCard.description}
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-6 flex flex-col sm:flex-row gap-3 justify-center"
-            >
-              {knowledgeCard.buttons.map((button: any, idx: number) => (
-                <motion.a
-                  key={idx}
-                  href={button.href}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.98 }}
-                  className={`
-                    px-6 py-3 rounded-full font-bold transition-all duration-300 shadow-lg
-                    flex items-center justify-center gap-2
-                    ${button.primary
-                      ? 'bg-primary text-dark hover:bg-secondary'
-                      : 'bg-transparent text-white border-2 border-white/20 hover:bg-white/5'
-                    }
-                  `}
-                >
-                  {button.text}
-                  <Icons.ArrowRight />
-                </motion.a>
-              ))}
-            </motion.div>
-
-            {/* Trust Badges - Mobile */}
-            <div className="mt-6 flex flex-wrap justify-center gap-2">
-              <TrustBadge label="Quick Response" color="green" />
-              <TrustBadge label="Expert Support" color="blue" />
-              <TrustBadge label="24/7 Available" color="blue" />
-            </div>
-          </div>
         </div>
-
-        {/* Bottom Fade */}
-        <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/20 to-transparent pointer-events-none rounded-b-3xl" />
       </div>
     </div>
   );
