@@ -33,22 +33,22 @@
 
 
     /* ==========================================================
-       PRIMARY BRAND BLUE
+       PRIMARY BRAND BLUE (RICHER & DARKER PREMIUM BLUE)
        ========================================================== */
 
-    --primary: 214 94% 43%;
-    /* #0866D5 */
+    --primary: 217 80% 36%;
+    /* #12489A */
 
     --primary-foreground: 0 0% 100%;
     /* #FFFFFF */
 
-    --secondary: 214 91% 49%;
-    /* #0B78F0 */
+    --secondary: 217 75% 44%;
+    /* #1B5BC0 */
 
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 214 91% 49%;
-    /* #0B78F0 */
+    --accent: 217 75% 44%;
+    /* #1B5BC0 */
 
     --accent-foreground: 0 0% 100%;
 
@@ -79,7 +79,7 @@
 
     --destructive-foreground: 0 0% 100%;
 
-    --ring: 214 94% 43%;
+    --ring: 217 80% 36%;
 
     --radius: 8px;
 
@@ -91,14 +91,14 @@
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 222 47% 11%;
 
-    --sidebar-primary: 214 94% 43%;
+    --sidebar-primary: 217 80% 36%;
     --sidebar-primary-foreground: 0 0% 100%;
 
-    --sidebar-accent: 214 91% 49%;
+    --sidebar-accent: 217 75% 44%;
     --sidebar-accent-foreground: 0 0% 100%;
 
     --sidebar-border: 214 32% 91%;
-    --sidebar-ring: 214 94% 43%;
+    --sidebar-ring: 217 80% 36%;
 
 
     /* ==========================================================
@@ -113,8 +113,8 @@
        GLOBAL HEX VARIABLES
        ========================================================== */
 
-    --primary-hex: #0866D5;
-    --primary-hover-hex: #0B78F0;
+    --primary-hex: #12489A;
+    --primary-hover-hex: #0F3B7D;
 
     --dark-bg: #FFFFFF;
 
@@ -151,9 +151,9 @@
        RGB VALUES
        ========================================================== */
 
-    --primary-rgb: 8, 102, 213;
+    --primary-rgb: 18, 72, 154;
 
-    --primary-hover-rgb: 11, 120, 240;
+    --primary-hover-rgb: 15, 59, 125;
 
     --dark-bg-rgb: 255, 255, 255;
 

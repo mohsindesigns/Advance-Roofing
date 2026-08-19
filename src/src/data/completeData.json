@@ -145,9 +145,9 @@
         "icon": "FiMessageSquare"
       },
       {
-        "value": "(402) 609-8072",
+        "value": "402-609-8072",
         "label": "Call Now",
-        "icon": "FiArrowRight"
+        "icon": "FiPhone"
       }
     ]
   },
@@ -312,18 +312,6 @@
       },
       {
         "number": "05",
-        "title": "Attic Venting",
-        "description": "Proper attic ventilation installation and repairs to improve energy efficiency and extend roof life.",
-        "icon": "Droplets",
-        "tag": "Energy Efficient",
-        "features": [
-          "Reduced Energy Costs",
-          "Prevents Moisture",
-          "Extends Roof Life"
-        ]
-      },
-      {
-        "number": "06",
         "title": "Gutter Cleaning",
         "description": "Professional gutter cleaning services to prevent water damage and maintain proper drainage.",
         "icon": "Wrench",
@@ -335,7 +323,7 @@
         ]
       },
       {
-        "number": "07",
+        "number": "06",
         "title": "Siding Services",
         "description": "Professional siding installation and repair to improve durability, energy efficiency, and curb appeal.",
         "icon": "Tool",
@@ -347,7 +335,7 @@
         ]
       },
       {
-        "number": "08",
+        "number": "07",
         "title": "Exterior Repair Solutions",
         "description": "Complete exterior repairs for weather damage, aging materials, and general property maintenance.",
         "icon": "Layers",

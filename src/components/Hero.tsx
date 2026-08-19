@@ -177,10 +177,10 @@ const RoofingInquiryForm = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: 24, boxShadow: "0 20px 60px rgba(249,115,22,0.10), 0 4px 24px rgba(0,0,0,0.07)" }}
+        style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: 24, boxShadow: "0 20px 60px rgba(8,102,213,0.12), 0 4px 24px rgba(0,0,0,0.07)" }}
         className="overflow-hidden will-change-transform transform-gpu"
       >
-        <div className="relative flex-shrink-0" style={{ background: "linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%)", borderBottom: "1px solid #FED7AA" }}>
+        <div className="relative flex-shrink-0" style={{ background: "linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)", borderBottom: "1px solid #BFDBFE" }}>
           <div className="px-5 sm:px-6 md:px-8 py-4 sm:py-5">
             <div className="flex items-start justify-between gap-3">
               <div className="flex items-center gap-3">
@@ -191,7 +191,7 @@ const RoofingInquiryForm = () => {
                   <h3 className="text-xl sm:text-2xl font-black" style={{ fontFamily: "var(--font-heading)", color: "#1E293B" }}>
                     Free Roofing Estimate
                   </h3>
-                  <p className="text-xs sm:text-sm font-medium mt-0.5" style={{ color: "#92400E" }}>
+                  <p className="text-xs sm:text-sm font-medium mt-0.5" style={{ color: "#1E40AF" }}>
                     Get your fast quote in 3 easy steps
                   </p>
                 </div>
@@ -281,7 +281,7 @@ const RoofingInquiryForm = () => {
                     >
                       <div className="rounded-xl p-3 flex items-center gap-2 mb-2" style={{ background: "rgba(var(--primary-rgb), 0.06)", border: "1px solid rgba(var(--primary-rgb), 0.14)" }}>
                         <FiUser className="w-4 h-4" style={{ color: "var(--primary-hex)" }} />
-                        <span className="text-xs font-medium" style={{ color: "#92400E" }}>
+                        <span className="text-xs font-medium" style={{ color: "#1E40AF" }}>
                           Step 1 of 3 - Tell us who you are
                         </span>
                       </div>
@@ -369,7 +369,7 @@ const RoofingInquiryForm = () => {
                     >
                       <div className="rounded-xl p-3 flex items-center gap-2 mb-2" style={{ background: "rgba(var(--primary-rgb), 0.06)", border: "1px solid rgba(var(--primary-rgb), 0.14)" }}>
                         <FiTool className="w-4 h-4" style={{ color: "var(--primary-hex)" }} />
-                        <span className="text-xs" style={{ color: "#92400E" }}>
+                        <span className="text-xs" style={{ color: "#1E40AF" }}>
                           Step 2 of 3 - What service do you need?
                         </span>
                       </div>
@@ -464,7 +464,7 @@ const RoofingInquiryForm = () => {
                     >
                       <div className="rounded-xl p-3 flex items-center gap-2 mb-2" style={{ background: "rgba(var(--primary-rgb), 0.06)", border: "1px solid rgba(var(--primary-rgb), 0.14)" }}>
                         <FiShield className="w-4 h-4" style={{ color: "var(--primary-hex)" }} />
-                        <span className="text-xs" style={{ color: "#92400E" }}>
+                        <span className="text-xs" style={{ color: "#1E40AF" }}>
                           Step 3 of 3 - How should we reach you?
                         </span>
                       </div>
@@ -557,14 +557,7 @@ const RoofingInquiryForm = () => {
 
 const Hero = () => {
   const sectionRef = useRef<HTMLElement>(null);
-  const [hoveredButton, setHoveredButton] = useState<number | null>(null);
-
-  const { headlines, description, buttons, stats } = completeData.hero;
-
-  const firstLine = `${headlines[0] || ""} ${headlines[1] || ""}`;
-  const thirdHeadlineParts = headlines[2]?.split("•") || [];
-  const slogan = thirdHeadlineParts[0]?.trim() || "";
-  const location = thirdHeadlineParts[1]?.trim() || "";
+  const { badge, headlines, description, buttons, stats } = completeData.hero;
 
   const iconComponents = {
     FiArrowRight: FiArrowRight,
@@ -579,17 +572,16 @@ const Hero = () => {
     FiTool: FiTool,
     FiMapPin: FiMapPin,
     FiMessageSquare: FiMessageSquare,
+    FiAward: FiAward,
   };
 
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen overflow-hidden isolate"
-      style={{ background: "linear-gradient(145deg, rgba(255,248,240,0.45) 0%, rgba(255,237,213,0.35) 50%, rgba(254,215,170,0.25) 100%)" }}
+      className="relative min-h-screen overflow-hidden isolate bg-[#1E293B]"
     >
-      {/* Decorative background: light orange subtle pattern */}
+      {/* Decorative background texture and clean gradient overlay without any bottom fade */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        {/* Hero image at very low opacity as texture */}
         <motion.img
           src={heroBg}
           alt=""
@@ -599,45 +591,57 @@ const Hero = () => {
           initial={{ scale: 1.05 }}
           animate={{ scale: 1 }}
           transition={{ duration: 10, ease: "easeOut" }}
-          className="w-full h-full object-cover absolute inset-0 will-change-transform"
-          style={{ opacity: 0.7 }}
+          className="w-full h-full object-cover absolute inset-0 will-change-transform opacity-35"
         />
-        {/* Subtle radial orange glow top-right */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full" style={{ background: "radial-gradient(circle, rgba(249,115,22,0.12) 0%, transparent 70%)" }} />
-        {/* Left-side dark overlay for text readability */}
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 45%, transparent 75%)" }} />
-        {/* Bottom fade to white */}
-        <div className="absolute bottom-0 left-0 w-full h-40" style={{ background: "linear-gradient(to top, #FFFFFF, transparent)" }} />
-        {/* Dot grid pattern */}
-        <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle, rgba(249,115,22,0.12) 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
+        {/* Soft directional gradient: comfortable slate tone on left, blending to image */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#1E293B]/75 to-[#1E293B]/30" />
+
+        {/* Subtle radial ambient blue glows */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-primary/20 blur-3xl" />
+        <div className="absolute top-1/3 -left-20 w-[500px] h-[500px] rounded-full bg-blue-900/30 blur-3xl" />
       </div>
 
-      <div className="relative z-10 min-h-screen flex items-center pt-24 pb-16 lg:py-24">
+      <div className="relative z-10 min-h-screen flex items-center pt-28 pb-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-            <div className="lg:col-span-7 flex flex-col items-center lg:items-start gap-4 text-center lg:text-left">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            {/* Left Content Column */}
+            <div className="lg:col-span-7 flex flex-col items-center lg:items-start gap-5 text-center lg:text-left">
 
+              {/* Trust Pill Badge */}
+              {badge && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-blue-950/80 border border-blue-800/60 shadow-sm"
+                >
+                  <span className="flex h-2 w-2 rounded-full bg-blue-400 animate-pulse" />
+                  <span className="text-xs sm:text-sm font-bold text-blue-300 tracking-wide">
+                    {badge}
+                  </span>
+                </motion.div>
+              )}
 
+              {/* Main Headline with Crisp White & Soft Blue Accent */}
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.75rem] font-black leading-[1.08] tracking-tight uppercase mt-10"
-                style={{ color: "#FFFFFF", fontFamily: "var(--font-heading)" }}
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.25rem] font-black leading-[1.08] tracking-tight uppercase"
+                style={{ fontFamily: "var(--font-heading)" }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
               >
-                {headlines[0] && <span className="block">{headlines[0]}</span>}
-                {headlines[1] && <span className="block mt-1">{headlines[1]}</span>}
-                {slogan && (
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mt-1">
-                    {slogan}
+                {headlines[0] && <span className="block text-white">{headlines[0]}</span>}
+                {headlines[1] && <span className="block text-white mt-1">{headlines[1]}</span>}
+                {headlines[2] && (
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-blue-200 mt-1">
+                    {headlines[2]}
                   </span>
                 )}
-
               </motion.h1>
 
+              {/* Description with readable soft slate text */}
               <motion.p
-                className="text-base sm:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium"
-                style={{ color: "#E2E8F0" }}
+                className="text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium text-slate-300"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -645,71 +649,87 @@ const Hero = () => {
                 {description}
               </motion.p>
 
+              {/* CTA Action Buttons */}
               <motion.div
-                className=" w-full"
+                className="w-full"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
               >
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 w-full">
                   {buttons.map((button, idx) => {
-                    const Icon = iconComponents[button.icon as keyof typeof iconComponents];
+                    const Icon = iconComponents[button.icon as keyof typeof iconComponents] || FiArrowRight;
                     const isFirst = idx === 0;
 
                     return (
                       <motion.a
                         key={idx}
                         href={button.href}
-                        className={`group relative overflow-hidden px-8 py-4 rounded-xl sm:rounded-2xl w-full sm:w-auto inline-flex items-center justify-center gap-3 text-base font-bold transition-all duration-300 active:scale-95 border-2 ${isFirst
-                          ? "bg-gradient-to-r from-primary to-secondary text-white border-transparent hover:opacity-90 shadow-lg shadow-primary/25"
-                          : "bg-white text-primary border-primary/40 hover:bg-primary hover:text-white hover:border-primary"
+                        className={`group relative overflow-hidden px-8 py-4 rounded-xl sm:rounded-2xl w-full sm:w-auto inline-flex items-center justify-center gap-3 text-base font-bold transition-all duration-300 active:scale-95 shadow-md ${isFirst
+                          ? "bg-primary hover:bg-primary/90 text-white shadow-primary/40 hover:shadow-lg hover:shadow-primary/50"
+                          : "bg-white/10 hover:bg-white/20 text-white border border-white/20 hover:border-white/40 backdrop-blur-sm"
                           }`}
-                        whileHover={{ y: -4 }}
+                        whileHover={{ y: -3 }}
                       >
                         <span className="relative z-10">{button.text}</span>
-                        {Icon && (
-                          <Icon className="w-5 h-5 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
-                        )}
+                        <Icon className="w-5 h-5 relative z-10 transition-transform duration-300 group-hover:translate-x-1 text-white" />
                       </motion.a>
                     );
                   })}
                 </div>
               </motion.div>
 
+              {/* Modern Trust Indicators Bar */}
               <motion.div
-                className="grid grid-cols-2 lg:flex lg:flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 pt-5 w-full"
-                style={{ borderTop: "1px solid rgba(var(--primary-rgb), 0.18)" }}
-                initial={{ opacity: 0, y: 30 }}
+                className="pt-6 border-t border-white/15 w-full mt-2"
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               >
-                {stats.map((stat, idx) => {
-                  const StatIcon = iconComponents[stat.icon as keyof typeof iconComponents];
-                  return (
-                    <div key={stat.label} className="flex items-center justify-center lg:justify-start gap-2.5 sm:gap-3 group mx-auto lg:mx-0">
-                      <div
-                        className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex-shrink-0 flex items-center justify-center transition-all duration-300 group-hover:scale-110"
-                        style={{ background: "rgba(var(--primary-rgb), 0.08)", border: "1px solid rgba(var(--primary-rgb), 0.2)" }}
-                      >
-                        {StatIcon
-                          ? <StatIcon className="w-4 h-4 sm:w-5 sm:h-5" style={{ color: "var(--primary-hex)" }} />
-                          : <span className="w-4 h-4 rounded-full" style={{ background: "var(--primary-hex)" }} />
-                        }
-                      </div>
-                      <div className="min-w-0 text-center lg:text-left">
-                        <div className="text-base sm:text-xl lg:text-2xl font-black leading-none mb-0.5 break-words" style={{ color: "#FFFFFF" }}>
-                          {stat.value}
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
+                  {stats.map((stat) => {
+                    const StatIcon = iconComponents[stat.icon as keyof typeof iconComponents] || FiAward;
+                    const isPhone = stat.value.includes("(") || stat.label.toLowerCase().includes("call") || stat.value.includes("-");
+
+                    const itemContent = (
+                      <div className="flex items-center gap-3 group">
+                        <div className="w-10 h-10 rounded-xl bg-primary/25 border border-primary/50 flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-110 shadow-sm shadow-primary/20">
+                          <StatIcon className="w-5 h-5 text-blue-300" />
                         </div>
-                        <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.15em] font-bold break-words" style={{ color: "#CBD5E1" }}>
-                          {stat.label}
+                        <div className="min-w-0 flex-1">
+                          <div className="text-sm sm:text-base font-black text-white leading-snug tracking-tight">
+                            {stat.value}
+                          </div>
+                          <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mt-0.5">
+                            {stat.label}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+
+                    if (isPhone) {
+                      return (
+                        <a
+                          key={stat.label}
+                          href="tel:+14026098072"
+                          className="block focus:outline-none transition-transform hover:-translate-y-0.5"
+                        >
+                          {itemContent}
+                        </a>
+                      );
+                    }
+
+                    return (
+                      <div key={stat.label}>
+                        {itemContent}
+                      </div>
+                    );
+                  })}
+                </div>
               </motion.div>
             </div>
 
+            {/* Right Column: Inquiry Form */}
             <div className="lg:col-span-5 relative">
               <RoofingInquiryForm />
             </div>
@@ -717,9 +737,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Transition fade to next section */}
-      <div className="absolute bottom-0 left-0 w-full h-24 pointer-events-none z-10" style={{ background: "linear-gradient(to top, #FFFFFF, transparent)" }} />
-    </section >
+
+    </section>
   );
 };
 

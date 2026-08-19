@@ -22,8 +22,8 @@ import {
   ClipboardCheck,
   Clock,
 } from "lucide-react";
-import logo from "../assets/logoreal.jpg";
-import logo2nd from "../assets/logoreal.jpg";
+import logo from "../assets/reallogoreal.png";
+import logo2nd from "../assets/reallogoreal.png";
 import completeData from "../src/data/completeData.json";
 
 const iconMap = {
@@ -180,27 +180,22 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 overflow-visible ${scrolled
-          ? "bg-dark/90 backdrop-blur-xl shadow-lg py-3 border-b border-primary/20"
-          : "bg-transparent py-3"
-          }`}
+        className="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white shadow-md border-b border-slate-100 py-3"
       >
-        <div className="container mx-auto px-4 lg:px-8 overflow-visible">
-          <div className="flex items-center justify-between overflow-visible">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="flex items-center justify-between">
             <motion.a
               href="#"
-              className="relative w-32 sm:w-40 lg:w-48 h-12 block group overflow-visible"
+              className="flex items-center h-12 sm:h-14 py-1 group"
               onClick={handleLinkClick}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <div className="absolute left-0 top-1/2 -translate-y-[30%] h-20 w-32 sm:h-24 sm:w-40 lg:h-32 lg:w-46 flex items-center justify-center z-50">
-                <img
-                  src={logo}
-                  alt="Advanced Roofing & Exteriors Logo"
-                  className="h-full w-full object-contain p-1 filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.6)]"
-                />
-              </div>
+              <img
+                src={logo}
+                alt="Advanced Roofing & Exteriors Logo"
+                className="h-10 sm:h-12 w-auto max-w-[180px] sm:max-w-[220px] object-contain"
+              />
             </motion.a>
 
             <div className="hidden lg:flex items-center space-x-2">
@@ -215,13 +210,13 @@ const Navbar = () => {
                         ref={servicesButtonRef}
                         onMouseEnter={handleServicesMouseEnter}
                         onMouseLeave={handleServicesMouseLeave}
-                        className={`flex items-center space-x-2 px-5 py-2.5 ${scrolled ? "text-[#1E293B]" : "text-white"} hover:text-primary transition-all duration-300 font-semibold rounded-xl relative group`}
+                        className="flex items-center space-x-2 px-5 py-2.5 text-slate-900 hover:text-primary transition-all duration-300 font-semibold rounded-xl relative group"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
                         <span className="flex items-center space-x-2">
-                          <LinkIcon className={`${scrolled ? "text-[#1E293B]" : "text-white"} group-hover:text-primary transition-colors`} />
-                          <span className={`${scrolled ? "text-[#1E293B]" : "text-white"} group-hover:text-primary transition-colors`}>
+                          <LinkIcon className="text-slate-900 group-hover:text-primary transition-colors" />
+                          <span className="text-slate-900 group-hover:text-primary transition-colors">
                             {link.label}
                           </span>
                         </span>
@@ -231,7 +226,7 @@ const Navbar = () => {
                           }}
                           transition={{ duration: 0.3 }}
                         >
-                          <ChevronDown className={`h-4 w-4 ml-1 ${scrolled ? "text-[#1E293B]" : "text-white"} group-hover:text-primary transition-colors`} />
+                          <ChevronDown className="h-4 w-4 ml-1 text-slate-900 group-hover:text-primary transition-colors" />
                         </motion.span>
                         <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-4/5 transition-all duration-500" />
                       </motion.button>
@@ -270,7 +265,7 @@ const Navbar = () => {
                                     onMouseLeave={() => {
                                       setHoveredService(null);
                                     }}
-                                    className="group block p-6 rounded-2xl border border-slate-100 hover:border-orange-200 hover:shadow-xl hover:shadow-orange-500/[0.04] transition-all duration-300 bg-white"
+                                    className="group block p-6 rounded-2xl border border-slate-100 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-500/[0.04] transition-all duration-300 bg-white"
                                     whileHover={{ y: -4 }}
                                   >
                                     <div className="flex items-start space-x-3 mb-4">
@@ -328,8 +323,8 @@ const Navbar = () => {
                                         <span
                                           key={feature}
                                           className={`px-2.5 py-1 text-[9px] font-bold uppercase tracking-wider rounded-full border transition-colors ${hoveredService === service.title
-                                            ? "bg-orange-50 text-orange-600 border-orange-100"
-                                            : "bg-slate-50 text-slate-500 border-slate-100 group-hover:bg-orange-50 group-hover:text-orange-600 group-hover:border-orange-100"
+                                            ? "bg-blue-50 text-blue-600 border-blue-100"
+                                            : "bg-slate-50 text-slate-500 border-slate-100 group-hover:bg-blue-50 group-hover:text-blue-600 group-hover:border-blue-100"
                                             }`}
                                         >
                                           {feature}
@@ -359,14 +354,14 @@ const Navbar = () => {
                       handleLinkClick();
                     }}
                     onMouseEnter={() => setActiveMegaMenu(null)}
-                    className={`flex items-center space-x-2 px-4 py-2.5 ${scrolled ? "text-[#1E293B]" : "text-white"} hover:text-primary transition-all duration-300 font-semibold rounded-xl relative group`}
+                    className="flex items-center space-x-2 px-4 py-2.5 text-slate-900 hover:text-primary transition-all duration-300 font-semibold rounded-xl relative group"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <div className={`${scrolled ? "text-[#1E293B]" : "text-white"} group-hover:text-primary transition-colors`}>
-                      <LinkIcon className={`${scrolled ? "text-[#1E293B]" : "text-white"} group-hover:text-primary transition-colors`} />
+                    <div className="text-slate-900 group-hover:text-primary transition-colors">
+                      <LinkIcon className="text-slate-900 group-hover:text-primary transition-colors" />
                     </div>
-                    <span className={`${scrolled ? "text-[#1E293B]" : "text-white"} group-hover:text-primary transition-colors`}>
+                    <span className="text-slate-900 group-hover:text-primary transition-colors">
                       {link.label}
                     </span>
                     <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-3/4 transition-all duration-500" />
@@ -384,7 +379,7 @@ const Navbar = () => {
                 href={ctaButton.href}
                 onClick={handleLinkClick}
                 onMouseEnter={() => setActiveMegaMenu(null)}
-                className="group relative px-7 py-3.5 rounded-xl font-semibold transition-all duration-300 bg-primary text-primary-foreground hover:bg-primary hover:text-white "
+                className="group relative px-7 py-3.5 rounded-xl font-semibold transition-all duration-300 bg-primary text-primary-foreground hover:bg-primary hover:text-white shadow-md shadow-primary/20"
               >
                 <span className="relative z-10 flex items-center space-x-2 text-white">
                   {(() => {
@@ -399,7 +394,7 @@ const Navbar = () => {
             <div className="flex items-center space-x-4 lg:hidden">
               <motion.button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="p-2.5 rounded-xl bg-muted hover:bg-muted/80 transition-colors"
+                className="p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 transition-colors"
                 aria-label="Toggle menu"
                 whileTap={{ scale: 0.9 }}
               >
@@ -411,7 +406,7 @@ const Navbar = () => {
                       animate={{ rotate: 0, opacity: 1 }}
                       exit={{ rotate: 90, opacity: 0 }}
                     >
-                      <X className="h-6 w-6 text-foreground" />
+                      <X className="h-6 w-6 text-slate-900" />
                     </motion.div>
                   ) : (
                     <motion.div
@@ -420,7 +415,7 @@ const Navbar = () => {
                       animate={{ rotate: 0, opacity: 1 }}
                       exit={{ rotate: -90, opacity: 0 }}
                     >
-                      <Menu className="h-6 w-6 text-foreground" />
+                      <Menu className="h-6 w-6 text-slate-900" />
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -451,13 +446,13 @@ const Navbar = () => {
                 duration: 0.4,
                 ease: [0.25, 0.1, 0.25, 1],
               }}
-              className="fixed top-0 right-0 h-full w-full max-w-md bg-dark z-50 lg:hidden shadow-2xl border-l border-primary/20 overflow-hidden"
+              className="fixed top-0 right-0 h-full w-full max-w-md bg-white z-50 lg:hidden shadow-2xl border-l border-slate-200 overflow-hidden"
             >
               <div className="flex flex-col h-full">
-                <div className="p-6 border-b border-border/50 flex-shrink-0">
+                <div className="p-6 border-b border-slate-100 flex-shrink-0">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
-                      <div className="h-12 w-36 rounded-xl flex items-center justify-center overflow-hidden">
+                      <div className="h-12 w-40 flex items-center justify-center overflow-hidden">
                         <img
                           src={logo2nd}
                           alt="Advanced Roofing & Exteriors Logo"
@@ -467,11 +462,11 @@ const Navbar = () => {
                     </div>
                     <motion.button
                       onClick={() => setIsMenuOpen(false)}
-                      className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
+                      className="p-2 rounded-lg hover:bg-slate-100 transition-colors"
                       whileHover={{ rotate: 90 }}
                       whileTap={{ scale: 0.9 }}
                     >
-                      <X className="h-5 w-5 text-card-foreground" />
+                      <X className="h-5 w-5 text-slate-900" />
                     </motion.button>
                   </div>
                 </div>
@@ -479,7 +474,7 @@ const Navbar = () => {
                 <div className="flex-1 overflow-y-auto">
                   <div className="p-6 space-y-6">
                     <div>
-                      <h3 className="text-lg font-bold text-card-foreground mb-4">
+                      <h3 className="text-lg font-bold text-slate-900 mb-4">
                         Our Services
                       </h3>
                       <div className="space-y-3">
@@ -497,7 +492,7 @@ const Navbar = () => {
                                 setIsMenuOpen(false);
                                 scrollToSection("services");
                               }}
-                              className="block p-4 rounded-xl border border-border/80 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 active:scale-[0.98]"
+                              className="block p-4 rounded-xl border border-slate-200 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 active:scale-[0.98] bg-white"
                               whileTap={{ scale: 0.98 }}
                             >
                               <div className="flex items-center space-x-3">
@@ -505,10 +500,10 @@ const Navbar = () => {
                                   <ServiceIcon isHovered={false} />
                                 </div>
                                 <div>
-                                  <h4 className="font-semibold text-card-foreground text-base">
+                                  <h4 className="font-semibold text-slate-900 text-base">
                                     {service.title}
                                   </h4>
-                                  <p className="text-sm text-muted-foreground">
+                                  <p className="text-sm text-slate-600">
                                     {service.description}
                                   </p>
                                 </div>
@@ -520,7 +515,7 @@ const Navbar = () => {
                     </div>
 
                     <div>
-                      <h3 className="text-lg font-bold text-card-foreground mb-4">
+                      <h3 className="text-lg font-bold text-slate-900 mb-4">
                         Quick Links
                       </h3>
                       <div className="space-y-2">
@@ -539,13 +534,13 @@ const Navbar = () => {
                                 }
                                 setIsMenuOpen(false);
                               }}
-                              className="flex items-center space-x-3 p-3 rounded-xl hover:bg-primary/5 hover:text-primary transition-all duration-300 active:scale-[0.98]"
+                              className="flex items-center space-x-3 p-3 rounded-xl hover:bg-slate-50 hover:text-primary transition-all duration-300 active:scale-[0.98]"
                               whileTap={{ scale: 0.98 }}
                             >
-                              <div className="text-card-foreground">
+                              <div className="text-slate-900">
                                 <LinkIcon />
                               </div>
-                              <span className="font-semibold text-card-foreground text-base">
+                              <span className="font-semibold text-slate-900 text-base">
                                 {link.label}
                               </span>
                             </motion.a>
@@ -556,12 +551,12 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                <div className="p-6 border-t border-primary/20 bg-brandCard flex-shrink-0">
+                <div className="p-6 border-t border-slate-200 bg-slate-50 flex-shrink-0">
                   <div className="space-y-4">
                     <a
                       href={ctaButton.href}
                       onClick={() => setIsMenuOpen(false)}
-                      className="block w-full py-4 bg-gradient-to-r from-primary to-secondary text-dark font-bold rounded-xl text-center shadow-lg shadow-primary/20 transition-all duration-300 active:scale-[0.98]"
+                      className="block w-full py-4 bg-primary text-white font-bold rounded-xl text-center shadow-lg shadow-primary/20 transition-all duration-300 active:scale-[0.98]"
                     >
                       {ctaButton.label} Now
                     </a>

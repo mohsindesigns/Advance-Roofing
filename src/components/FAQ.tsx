@@ -12,7 +12,7 @@ import {
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import completeData from "../src/data/completeData.json";
-import vectorimage from '../assets/lcverctor.webp'
+import vectorimage from '../assets/vector.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -742,7 +742,7 @@ const KnowledgeCard = () => {
               >
                 <TrustBadge label="Quick Response" color="green" />
                 <TrustBadge label="Expert Support" color="blue" />
-                <TrustBadge label="24/7 Available" color="yellow" />
+                <TrustBadge label="24/7 Available" color="blue" />
               </motion.div>
             </div>
 
@@ -830,7 +830,7 @@ const KnowledgeCard = () => {
             <div className="mt-6 flex flex-wrap justify-center gap-2">
               <TrustBadge label="Quick Response" color="green" />
               <TrustBadge label="Expert Support" color="blue" />
-              <TrustBadge label="24/7 Available" color="yellow" />
+              <TrustBadge label="24/7 Available" color="blue" />
             </div>
           </div>
         </div>

@@ -6,24 +6,26 @@ import {
   Layout, Building, CheckCircle, Phone, Zap,
 } from "lucide-react";
 import completeData from "../src/data/completeData.json";
-import imgInspection from "@/assets/portfolio-3-c.webp";
+import imgInspection from "@/assets/roofingowner.jpg";
 import imgInstallation from "@/assets/roofingbg.webp";
 import imgRepair from "@/assets/metalroofing.webp";
-import imgStormDamage from "@/assets/flatroofing.webp";
-import imgAtticVenting from "@/assets/skylight.webp";
-import imgGutterCleaning from "@/assets/portfolio-5.webp";
-import imgSiding from "@/assets/portfolio-4-c.webp";
-import imgExteriorRepair from "@/assets/framing-c.webp";
+import imgStormDamage from "@/assets/stormdamagerepair.jpg";
+import imgGutterCleaning from "@/assets/guttercleaning.jpg";
+import imgSiding from "@/assets/sidingservice.webp";
+import imgExteriorRepair from "@/assets/exteriorrepair.jpg";
 
 const serviceImageMap: Record<string, string> = {
   "01": imgInspection,
   "02": imgInstallation,
   "03": imgRepair,
   "04": imgStormDamage,
-  "05": imgAtticVenting,
-  "06": imgGutterCleaning,
-  "07": imgSiding,
-  "08": imgExteriorRepair,
+  "05": imgGutterCleaning,
+  "06": imgSiding,
+  "07": imgExteriorRepair,
+  // Also support legacy numbers as fallback
+  "gutter": imgGutterCleaning,
+  "siding": imgSiding,
+  "exterior": imgExteriorRepair,
 };
 
 const iconMap: Record<string, React.ElementType> = {
@@ -242,79 +244,78 @@ const Services = () => {
           transition={{ duration: 0.65 }}
           className="relative overflow-hidden rounded-3xl"
           style={{
-            background: "linear-gradient(135deg, #1E293B 0%, #0F172A 100%)",
-            boxShadow: "0 25px 60px rgba(0,0,0,0.15)",
-            border: "1px solid rgba(249, 115, 22, 0.2)"
+            background: "linear-gradient(135deg, #0F172A 0%, #001B36 100%)",
+            boxShadow: "0 25px 60px rgba(8, 102, 213, 0.15)",
+            border: "1px solid rgba(var(--primary-rgb), 0.3)"
           }}
         >
-          {/* Technical Grid Pattern */}
+          {/* Subtle Ambient Glow and Grid */}
+          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
           <div
-            className="absolute inset-0 opacity-[0.08]"
+            className="absolute inset-0 opacity-[0.06] pointer-events-none"
             style={{
-              backgroundImage: `linear-gradient(rgba(var(--white-rgb), 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(var(--white-rgb), 0.15) 1px, transparent 1px)`,
+              backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px)`,
               backgroundSize: '45px 45px'
             }}
           />
 
           {/* Content */}
-          <div className="relative z-10 px-8 py-14 md:px-16 md:py-16">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+          <div className="relative z-10 px-8 py-12 md:px-16 md:py-16">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
 
               {/* Left text */}
               <div className="text-center lg:text-left max-w-xl">
-                <div className="inline-flex items-center gap-2.5 mb-6 rounded-full px-4 py-2" style={{ border: "1px solid rgba(var(--primary-rgb), 0.2)", background: "rgba(var(--primary-rgb), 0.06)" }}>
-                  <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "var(--primary-hex)" }} />
-                  <span className="text-[10px] font-black uppercase tracking-[0.25em]" style={{ color: "var(--primary-hex)" }}>
+                <div className="inline-flex items-center gap-2.5 mb-5 rounded-full px-4 py-2 bg-primary/15 border border-primary/30">
+                  <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                  <span className="text-[11px] font-black uppercase tracking-[0.2em] text-primary">
                     Free Consultation Available
                   </span>
                 </div>
 
-                <h3 className="text-3xl md:text-4xl xl:text-5xl font-black leading-[1.05] tracking-tight mb-5" style={{ color: "#FFFFFF", fontFamily: "var(--font-heading)" }}>
+                <h3 className="text-3xl md:text-4xl xl:text-5xl font-black leading-[1.08] tracking-tight mb-4 text-white" style={{ fontFamily: "var(--font-heading)" }}>
                   {cta.title}
                 </h3>
 
-                <p className="text-base md:text-lg leading-relaxed mb-7" style={{ color: "#E2E8F0" }}>
+                <p className="text-base md:text-lg leading-relaxed mb-6 text-slate-300">
                   {cta.description}
                 </p>
 
                 {/* Trust badges */}
-                <div className="flex flex-wrap justify-center lg:justify-start gap-6">
+                <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6">
                   {["Licensed & Insured", "Locally Owned", "Free Estimates"].map((t) => (
                     <div key={t} className="flex items-center gap-2">
-                      <div className="w-4 h-4 rounded-full flex items-center justify-center shrink-0" style={{ background: "rgba(var(--primary-rgb), 0.12)", border: "1px solid rgba(var(--primary-rgb), 0.37)" }}>
-                        <CheckCircle className="w-2.5 h-2.5" style={{ color: "var(--primary-hex)" }} />
+                      <div className="w-4 h-4 rounded-full flex items-center justify-center shrink-0 bg-primary/20 border border-primary/40">
+                        <CheckCircle className="w-2.5 h-2.5 text-primary" />
                       </div>
-                      <span className="text-xs font-semibold" style={{ color: "#CBD5E1" }}>{t}</span>
+                      <span className="text-xs font-semibold text-slate-300">{t}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
               {/* Right buttons */}
-              <div className="flex flex-col gap-3 w-full lg:w-auto lg:min-w-[240px] shrink-0">
+              <div className="flex flex-col sm:flex-row lg:flex-col gap-3.5 w-full lg:w-auto lg:min-w-[240px] shrink-0">
 
                 {/* Primary Button */}
                 <motion.a
-                  href={cta.buttonLink}
-                  whileHover={{ scale: 1.05 }}
+                  href="#contact"
+                  whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
-                  className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-bold transition-all duration-300"
-                  style={{ background: "linear-gradient(135deg, var(--primary-hex), var(--primary-hover-hex))", color: "#FFFFFF", boxShadow: "0 12px 40px rgba(var(--primary-rgb), 0.35)" }}
+                  className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-bold transition-all duration-300 bg-primary text-white hover:bg-primary/90 shadow-lg shadow-primary/30 text-center"
                 >
-                  {cta.buttonText}
+                  <span>Get Free Quote</span>
                   <ArrowRight className="w-5 h-5" />
                 </motion.a>
 
                 {/* Secondary Button */}
                 <motion.a
-                  href="tel:+1234567890"
-                  whileHover={{ scale: 1.05 }}
+                  href="tel:+14026098072"
+                  whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
-                  className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-bold transition-all duration-300"
-                  style={{ background: "transparent", color: "#FFFFFF", border: "2px solid rgba(255, 255, 255, 0.4)" }}
+                  className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-bold transition-all duration-300 bg-white/10 text-white border border-white/20 hover:bg-white hover:text-slate-900 text-center backdrop-blur-sm"
                 >
-                  <Phone className="w-5 h-5" />
-                  Call Now
+                  <Phone className="w-5 h-5 text-primary" />
+                  <span>(402) 609-8072</span>
                 </motion.a>
               </div>
             </div>

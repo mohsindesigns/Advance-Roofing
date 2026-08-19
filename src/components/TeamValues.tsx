@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ownerImg from "@/assets/lcfounder.webp";
+import ownerImg from "@/assets/roofingowner.jpg";
 import completeData from "../src/data/completeData.json";
 
 gsap.registerPlugin(ScrollTrigger);

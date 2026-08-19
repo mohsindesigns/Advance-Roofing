@@ -58,8 +58,8 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         // Brand Color Tokens
-        vividOrange: "#F97316",
-        deepOrange: "#EA580C",
+        brandBlue: "#12489A",
+        brandLightBlue: "#1B5BC0",
         pureWhite: "#FFFFFF",
         offWhite: "#F8F9FA",
         lightGray: "#F1F5F9",

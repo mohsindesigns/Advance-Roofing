@@ -10,7 +10,7 @@ import {
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import completeData from "../src/data/completeData.json";
-import vectorimage2 from '../assets/lcverctor.webp'
+import vectorimage2 from '../assets/vector.png'
 
 
 
@@ -290,7 +290,7 @@ const FeatureCard = ({ feature, index }: { feature: any; index: number }) => {
       }}
       className="relative group h-full cursor-pointer"
     >
-      <div className="relative h-full bg-white overflow-hidden rounded-3xl border border-orange-100 shadow-md shadow-orange-950/[0.03] hover:shadow-xl hover:shadow-orange-500/[0.08] transition-all duration-500">
+      <div className="relative h-full bg-white overflow-hidden rounded-3xl border border-blue-100 shadow-md shadow-blue-950/[0.03] hover:shadow-xl hover:shadow-blue-500/[0.08] transition-all duration-500">
         <motion.div
           className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
           style={{
@@ -386,7 +386,7 @@ const FeatureCard = ({ feature, index }: { feature: any; index: number }) => {
 
         <div className="relative h-full p-8 flex flex-col z-10">
           <div className="relative mb-6">
-            <div className="relative w-20 h-20 bg-orange-50/70 border border-orange-100 rounded-2xl flex items-center justify-center">
+            <div className="relative w-20 h-20 bg-blue-50/70 border border-blue-100 rounded-2xl flex items-center justify-center">
               <motion.div
                 className="absolute inset-0 bg-primary/10 opacity-0"
                 animate={{
@@ -540,7 +540,9 @@ const StatCounter = ({
     requestAnimationFrame(animate);
   }, [inView, numericValue, isNumeric]);
 
-  return (
+  const isPhone = value.includes("(") || label.toLowerCase().includes("call");
+
+  const cardMarkup = (
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 20 }}
@@ -548,40 +550,35 @@ const StatCounter = ({
       transition={{ duration: 0.4, delay }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="text-center group cursor-pointer"
+      className="p-5 md:p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300 flex flex-col items-center justify-center text-center group cursor-pointer h-full"
     >
-      <div className="relative inline-block">
+      <div className="relative mb-2">
         <motion.div
-          className="text-4xl md:text-5xl font-black text-primary relative z-10"
+          className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 group-hover:text-primary transition-colors tracking-tight whitespace-nowrap"
           animate={{
-            scale: isHovered ? 1.1 : 1,
+            scale: isHovered ? 1.05 : 1,
             y: isHovered ? -2 : 0,
           }}
         >
           <span>{displayValue}</span>
           {suffix}
         </motion.div>
-
-        <motion.div
-          className="absolute inset-0 bg-primary/10 blur-xl"
-          animate={{
-            scale: isHovered ? 1.5 : 1,
-            opacity: isHovered ? 0.5 : 0,
-          }}
-          transition={{ duration: 0.3 }}
-        />
-
-        <motion.div
-          className="absolute -top-2 -right-2 w-1.5 h-1.5 bg-primary rounded-full"
-          animate={{ scale: [1, 1.5, 1] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        />
       </div>
-      <div className="text-xs font-semibold tracking-wider text-muted-foreground mt-2 uppercase">
+      <div className="text-[11px] sm:text-xs font-bold tracking-widest text-slate-500 uppercase mt-1">
         {label}
       </div>
     </motion.div>
   );
+
+  if (isPhone) {
+    return (
+      <a href="tel:+14026098072" className="block focus:outline-none h-full transition-transform hover:-translate-y-0.5">
+        {cardMarkup}
+      </a>
+    );
+  }
+
+  return cardMarkup;
 };
 
 interface CTASectionProps {
@@ -871,7 +868,7 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-24">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-20 md:mb-24">
           {stats.map((stat: any, index: number) => (
             <StatCounter
               key={stat.label}

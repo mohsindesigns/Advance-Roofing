@@ -149,39 +149,46 @@ const Portfolio = () => {
 
       <div className="max-w-7xl mx-auto px-4 xs:px-6 md:px-8 relative z-10">
         {/* Structured Header */}
-        <div className="flex flex-col gap-8 md:gap-12 mb-16 md:mb-20">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 md:gap-8">
-            <div className="max-w-2xl">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                className="inline-flex items-center gap-3 mb-4 md:mb-6 bg-primary/10 px-4 py-2 rounded-full border border-primary/20 shadow-sm"
-              >
-                <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white shadow-lg shadow-primary/20">
-                  <Shield className="w-3 h-3" />
-                </div>
-                <span className="text-primary uppercase tracking-[0.4em] text-[9px] md:text-[10px] font-black">
-                  {section.badge}
-                </span>
-              </motion.div>
-              <h2
-                className="text-4xl sm:text-5xl md:text-7xl font-black text-foreground uppercase tracking-tighter leading-[0.9] md:leading-none font-heading"
-                dangerouslySetInnerHTML={{ __html: section.headline }}
-              />
-            </div>
+        <div className="flex flex-col items-center text-center gap-6 mb-12 md:mb-16">
+          <div className="max-w-3xl mx-auto">
+            {/* Pill Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-2.5 mb-4 bg-primary/10 px-4 py-2 rounded-full border border-primary/25 shadow-sm"
+            >
+              <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center text-white shadow-md shadow-primary/25">
+                <Shield className="w-3 h-3 text-white" />
+              </div>
+              <span className="text-primary uppercase tracking-[0.25em] text-[11px] font-black">
+                {section.badge}
+              </span>
+            </motion.div>
+
+            {/* Main Section Title */}
+            <h2
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 uppercase tracking-tight leading-tight font-heading mb-4"
+              dangerouslySetInnerHTML={{ __html: section.headline }}
+            />
+
+            {/* Subtitle */}
+            <p className="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+              Explore our recent residential roofing, commercial exterior, and storm damage restoration projects in Omaha and surrounding Nebraska communities.
+            </p>
           </div>
 
-          {/* Symmetrical Pill Navigation */}
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-4">
+          {/* Symmetrical Category Filter Tabs */}
+          <div className="flex flex-wrap justify-center gap-2.5 sm:gap-3.5 pt-2">
             {categories.map((cat) => {
               const isSelected = activeTab === cat;
               return (
                 <button
                   key={cat}
                   onClick={() => setActiveTab(cat)}
-                  className={`text-[10px] sm:text-[11px] font-black uppercase tracking-widest transition-all duration-300 px-5 py-2.5 rounded-full border shadow-sm ${isSelected
-                    ? "bg-gradient-to-r from-primary to-secondary border-primary text-dark font-black"
-                    : "bg-card border-border text-muted-foreground hover:text-white hover:border-primary/40"
+                  className={`text-xs font-bold uppercase tracking-wider transition-all duration-300 px-5 py-2.5 rounded-full border ${isSelected
+                    ? "bg-primary border-primary text-white shadow-md shadow-primary/30 scale-105"
+                    : "bg-white border-slate-200 text-slate-700 hover:text-primary hover:border-primary/40 hover:bg-blue-50/50 shadow-sm"
                     }`}
                 >
                   {cat}
@@ -207,27 +214,7 @@ const Portfolio = () => {
           </AnimatePresence>
         </motion.div>
 
-        {/* View All Action */}
-        <div className="mt-16 md:mt-20 pt-16 md:pt-20 border-t border-border flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="text-center md:text-left">
-            <h4 className="text-xl md:text-2xl font-black uppercase italic tracking-tight text-foreground font-heading">
-              Ready to see more?
-            </h4>
-            <p className="text-muted-foreground text-[10px] md:text-sm uppercase tracking-widest mt-1 font-body">
-              Browse our complete gallery of residential, commercial, and storm restoration projects
-            </p>
-          </div>
-          <motion.a
-            href="#contact"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-            className="group w-full md:w-auto inline-flex items-center justify-center gap-4 md:gap-6 bg-gradient-to-r from-primary to-secondary text-dark px-6 md:px-10 py-4 md:py-5 font-black uppercase tracking-[0.2em] shadow-lg shadow-primary/15 transition-all hover:opacity-90"
-          >
-            <span>Load More Projects</span>
-            <div className="hidden md:block w-8 h-[2px] bg-current transform group-hover:w-12 transition-all" />
-            <ArrowRight className="md:hidden w-4 h-4" />
-          </motion.a>
-        </div>
+
       </div>
     </section>
   );

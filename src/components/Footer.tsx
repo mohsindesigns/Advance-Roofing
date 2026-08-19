@@ -692,7 +692,7 @@ const LegacyMarquee = () => {
 const Footer = () => {
   const sectionRef = useRef(null);
   const [isClient, setIsClient] = useState(false);
-  const { company, quickLinks, bottom, hours } = completeData.footer;
+  const { company, quickLinks, bottom } = completeData.footer;
 
   useEffect(() => { setIsClient(true); }, []);
 
@@ -769,16 +769,7 @@ const Footer = () => {
 
           {/* Col 1 – Brand + newsletter */}
           <div className="footer-reveal space-y-6">
-            {/* Logo */}
-            <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-              <div style={{ width: 44, height: 44, borderRadius: "50%", background: `linear-gradient(135deg, ${GOLD}, ${DARK_GOLD})`, display: "flex", alignItems: "center", justifycontent: "center", boxShadow: `0 4px 20px rgba(var(--primary-rgb), 0.25)` }}>
-                <span style={{ color: "var(--dark-bg)", fontWeight: 900, fontSize: "0.85rem", fontFamily: "var(--font-heading)", letterSpacing: "0.05em" }}>TC</span>
-              </div>
-              <div>
-                <span style={{ color: "var(--white-color)", fontFamily: "var(--font-heading)", fontSize: "1rem", fontWeight: 600, display: "block" }}>{company.name}</span>
-                <span style={{ color: "rgba(var(--primary-rgb), 0.6)", fontFamily: "var(--font-body)", fontSize: "0.58rem", letterSpacing: "0.2em", textTransform: "uppercase" }}>{company.tagline}</span>
-              </div>
-            </div>
+
 
             <p style={{ color: "#E2E8F0", fontSize: "0.82rem", lineHeight: 1.8, maxWidth: 360 }}>{company.description}</p>
 
@@ -817,12 +808,7 @@ const Footer = () => {
             <MaterialsSection />
           </div>
 
-          {/* Col 3 – Contact + Hours + Certs */}
-          <div className="footer-reveal md:col-span-2 lg:col-span-1">
-            <ContactInfo />
-            {hours && <OfficeHours hours={hours} />}
-            <CertificationsGrid />
-          </div>
+
         </div>
 
         {/* Scrolling marquee */}
@@ -851,7 +837,7 @@ const Footer = () => {
           </div>
 
           <a
-            href="https://www.dynamicdesignsagency.com"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "#6B7280", textDecoration: "none", transition: "color 0.2s", fontFamily: "var(--font-body)" }}

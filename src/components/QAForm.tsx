@@ -411,7 +411,7 @@ const CrystalServiceCard = ({
         relative p-5 sm:p-6 rounded-2xl cursor-pointer transition-all duration-700
         ${isSelected
           ? "bg-gradient-to-br from-primary/5 via-card to-primary/5 shadow-2xl"
-          : "bg-white hover:bg-orange-50/50"
+          : "bg-white hover:bg-blue-50/50"
         }
       `}
       style={{

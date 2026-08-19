@@ -2,8 +2,8 @@
   <!-- ADVANCED ROOFING & EXTERIORS BRAND ICON -->
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F97316"/>
-      <stop offset="100%" stop-color="#EA580C"/>
+      <stop offset="0%" stop-color="#12489A"/>
+      <stop offset="100%" stop-color="#1B5BC0"/>
     </linearGradient>
   </defs>
   <!-- Rounded square background -->
