@@ -40,9 +40,9 @@ const Mission = () => {
           <div className="accent-line mb-6 mission-copy" />
           <h2 className="heading-lg text-foreground mb-8 mission-headline">Excellence in Every<br />Installation.</h2>
           <div className="space-y-6">
-            <p className="body-lg text-foreground/90 mission-copy">The Renov Team was founded to do more than just install roofs. We are here to transform your home with precision, protection, and care.</p>
-            <p className="body-sm text-muted-foreground mission-copy">The Renov Team was launched to bring veteran discipline and professional precision to every roofing and solar project.</p>
-            <p className="body-sm text-muted-foreground mission-copy italic border-l-2 border-primary/30 pl-4">"We don't just build roofs. We restore protection, quality, and professionalism to the construction industry."</p>
+            <p className="body-lg text-foreground/90 mission-copy">Advanced Roofing & Exteriors was founded to do more than just install roofs. We are here to protect and transform your property with precision and care.</p>
+            <p className="body-sm text-muted-foreground mission-copy">Advanced Roofing & Exteriors was launched to bring dedicated discipline and professional precision to every roofing and exterior project.</p>
+            <p className="body-sm text-muted-foreground mission-copy italic border-l-2 border-primary/30 pl-4">"We don't just build roofs. We deliver lasting protection, quality craftsmanship, and honest service."</p>
           </div>
         </div>
       </div>

@@ -6,28 +6,24 @@ import {
   Layout, Building, CheckCircle, Phone, Zap,
 } from "lucide-react";
 import completeData from "../src/data/completeData.json";
-import imgJunkRemoval from "@/assets/junkremovall.jfif";
-import imgConstructionDebris from "@/assets/constrcutiondebrisremoval.jfif";
-import imgDemolitionCleanup from "@/assets/demolitioncleanup.jfif";
-import imgDumpTruck from "@/assets/dumptruckservices.jfif";
-import imgDirtHauling from "@/assets/dirhauling.jfif";
-import imgLandscapeMaterial from "@/assets/landscapematerial.jfif";
-import imgPropertyCleanout from "@/assets/propertycleanout-c.webp";
-import imgContractorHauling from "@/assets/contracterhauling.jfif";
-import imgCommercialJunk from "@/assets/commericaljunkremoval.jfif";
-import imgResidentialJunk from "@/assets/residentaljunkremoval-c.webp";
+import imgInspection from "@/assets/portfolio-3-c.webp";
+import imgInstallation from "@/assets/roofingbg.webp";
+import imgRepair from "@/assets/metalroofing.webp";
+import imgStormDamage from "@/assets/flatroofing.webp";
+import imgAtticVenting from "@/assets/skylight.webp";
+import imgGutterCleaning from "@/assets/portfolio-5.webp";
+import imgSiding from "@/assets/portfolio-4-c.webp";
+import imgExteriorRepair from "@/assets/framing-c.webp";
 
 const serviceImageMap: Record<string, string> = {
-  "01": imgJunkRemoval,
-  "02": imgConstructionDebris,
-  "03": imgDemolitionCleanup,
-  "04": imgDumpTruck,
-  "05": imgDirtHauling,
-  "06": imgLandscapeMaterial,
-  "07": imgPropertyCleanout,
-  "08": imgContractorHauling,
-  "09": imgCommercialJunk,
-  "10": imgResidentialJunk,
+  "01": imgInspection,
+  "02": imgInstallation,
+  "03": imgRepair,
+  "04": imgStormDamage,
+  "05": imgAtticVenting,
+  "06": imgGutterCleaning,
+  "07": imgSiding,
+  "08": imgExteriorRepair,
 };
 
 const iconMap: Record<string, React.ElementType> = {

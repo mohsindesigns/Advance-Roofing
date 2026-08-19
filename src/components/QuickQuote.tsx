@@ -17,12 +17,13 @@ const QuickQuote = () => {
     const [step, setStep] = useState(1);
 
     const projectTypes = [
-        { value: 'residential', label: 'Residential Coating' },
-        { value: 'commercial', label: 'Commercial Coating' },
-        { value: 'industrial', label: 'Industrial Coating' },
-        { value: 'garage', label: 'Garage Floor Coating' },
-        { value: 'patio-pool', label: 'Patio / Pool Deck' },
-        { value: 'other', label: 'Other' }
+        { value: 'residential', label: 'Residential Roofing' },
+        { value: 'commercial', label: 'Commercial Roofing' },
+        { value: 'storm', label: 'Storm Damage Restoration' },
+        { value: 'repair', label: 'Roof Repair & Leak Fix' },
+        { value: 'siding', label: 'Siding Installation & Repair' },
+        { value: 'gutters-venting', label: 'Gutter Cleaning & Attic Venting' },
+        { value: 'other', label: 'Other Exterior Service' }
     ];
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -37,7 +38,7 @@ const QuickQuote = () => {
         setIsSubmitting(true);
 
         const emailContent = `
-🚛 NEW QUICK QUOTE REQUEST - Los Carnales Junk Removal
+🏠 NEW QUICK QUOTE REQUEST - Advanced Roofing & Exteriors
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -55,13 +56,13 @@ ${formData.message}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ⏱️ Submitted: ${new Date().toLocaleString()}
 🌐 Source: Quick Quote Widget
-Locally Owned & Operated
+Quality Craftsmanship • Honest Service • Lasting Protection
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     `;
 
         try {
             try {
-                const response = await fetch('https://formsubmit.co/ajax/info@loscarnalesjunk.com', {
+                const response = await fetch('https://formsubmit.co/ajax/advancedroofingomaha@gmail.com', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -87,13 +88,13 @@ Locally Owned & Operated
                 console.log('FormSubmit failed, using mailto fallback');
             }
 
-            const mailtoLink = `mailto:info@loscarnalesjunk.com?subject=🚛 Quick Quote - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
+            const mailtoLink = `mailto:advancedroofingomaha@gmail.com?subject=🏠 Quick Quote - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
             window.location.href = mailtoLink;
             showSuccess();
 
         } catch (error) {
             console.error('Submission error:', error);
-            alert('Please email us directly at info@loscarnalesjunk.com');
+            alert('Please email us directly at advancedroofingomaha@gmail.com');
         } finally {
             setIsSubmitting(false);
         }
@@ -567,7 +568,7 @@ Locally Owned & Operated
                                                                 required
                                                                 rows={5}
                                                                 className="w-full px-5 py-4 bg-muted border border-border rounded-xl focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all text-foreground resize-none"
-                                                                placeholder="Briefly describe your concrete coating needs..."
+                                                                placeholder="Briefly describe your roofing or exterior needs..."
                                                             />
                                                         </div>
                                                     </motion.div>

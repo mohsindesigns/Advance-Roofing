@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Home, Sun, Droplets } from "lucide-react";
 
-import heroBg from "@/assets/lchero-bg.webp";
+import heroBg from "@/assets/roofingbg.webp";
 import {
   FiArrowRight,
   FiChevronDown,
@@ -36,13 +36,13 @@ import completeData from "../src/data/completeData.json";
 
 
 
-// MODERN PROFESSIONAL FORM COMPONENT - UPDATED FOR COATINGS SERVICES
-const CoatingInquiryForm = () => {
+// MODERN PROFESSIONAL FORM COMPONENT - ADVANCED ROOFING SERVICES
+const RoofingInquiryForm = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    serviceType: "garage",
+    serviceType: "roof-inspection",
     serviceDetails: "",
     email: "",
     phone: "",
@@ -76,8 +76,31 @@ const CoatingInquiryForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log("Coating quote request:", formData);
+
+    try {
+      await fetch("https://formsubmit.co/ajax/advancedroofingomaha@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `🏠 Hero Quote Request - ${formData.firstName} ${formData.lastName}`,
+          name: `${formData.firstName} ${formData.lastName}`,
+          email: formData.email,
+          phone: formData.phone,
+          address: formData.address,
+          service_type: formData.serviceType,
+          service_details: formData.serviceDetails,
+          urgency: formData.urgency,
+          _template: "table",
+          _captcha: "false",
+        }),
+      });
+    } catch (err) {
+      console.log("Form submission fallback to mailto");
+    }
+
     setIsSubmitting(false);
     setIsSubmitted(true);
     setTimeout(() => {
@@ -86,52 +109,52 @@ const CoatingInquiryForm = () => {
       setFormData({
         firstName: "",
         lastName: "",
-        serviceType: "garage",
+        serviceType: "roof-inspection",
         serviceDetails: "",
         email: "",
         phone: "",
         address: "",
         urgency: "standard",
       });
-    }, 3000);
+    }, 4000);
   };
 
   const serviceOptions = [
     {
-      value: "junk-removal",
-      label: "Junk Removal & Cleanouts",
-      icon: FiHome,
-      desc: "Residential & commercial junk removal",
-    },
-    {
-      value: "construction-debris",
-      label: "Construction Debris",
-      icon: FiBriefcase,
-      desc: "Contractor debris & jobsite cleanup",
-    },
-    {
-      value: "dump-truck",
-      label: "Dump Truck Services",
-      icon: RiBuildingLine,
-      desc: "Heavy material hauling & disposal",
-    },
-    {
-      value: "dirt-gravel",
-      label: "Dirt & Gravel Delivery",
-      icon: FiTool,
-      desc: "Aggregate & landscape material delivery",
-    },
-    {
-      value: "demolition-cleanup",
-      label: "Demolition Cleanup",
+      value: "roof-inspection",
+      label: "Roof Inspection",
       icon: FiSearch,
-      desc: "Structure & site demolition debris",
+      desc: "Thorough storm & leak evaluation",
     },
     {
-      value: "other",
-      label: "Other Hauling Service",
+      value: "roof-installation",
+      label: "Roof Installation & Replacement",
+      icon: FiHome,
+      desc: "Complete residential & commercial roofs",
+    },
+    {
+      value: "roof-repair",
+      label: "Roof Repair & Leak Fix",
       icon: FiTool,
-      desc: "Heavy duty custom hauling solutions",
+      desc: "Shingle repair, flashing & leaks",
+    },
+    {
+      value: "storm-damage",
+      label: "Storm Damage Restoration",
+      icon: FiCloudRain,
+      desc: "Hail, wind damage & insurance claims",
+    },
+    {
+      value: "siding-services",
+      label: "Siding Services",
+      icon: RiBuildingLine,
+      desc: "Durable siding installation & repair",
+    },
+    {
+      value: "gutter-venting",
+      label: "Gutter Cleaning & Attic Venting",
+      icon: FiShield,
+      desc: "Drainage protection & ventilation",
     },
   ];
 
@@ -166,7 +189,7 @@ const CoatingInquiryForm = () => {
                 </div>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-black" style={{ fontFamily: "var(--font-heading)", color: "#1E293B" }}>
-                    Free Hauling Estimate
+                    Free Roofing Estimate
                   </h3>
                   <p className="text-xs sm:text-sm font-medium mt-0.5" style={{ color: "#92400E" }}>
                     Get your fast quote in 3 easy steps
@@ -522,7 +545,7 @@ const CoatingInquiryForm = () => {
                 Estimate Request Sent!
               </h3>
               <p className="text-muted-foreground text-sm max-w-xs mx-auto">
-                Thanks for contacting Los Carnales Junk Removal. We'll reach out within 24 hours with your free estimate.
+                Thanks for contacting Advanced Roofing & Exteriors. We'll reach out within 24 hours with your free estimate.
               </p>
             </motion.div>
           )}
@@ -688,7 +711,7 @@ const Hero = () => {
             </div>
 
             <div className="lg:col-span-5 relative">
-              <CoatingInquiryForm />
+              <RoofingInquiryForm />
             </div>
           </div>
         </div>

@@ -2,51 +2,51 @@
   "navbar": {
     "services": [
       {
-        "title": "JUNK REMOVAL",
-        "description": "Residential and commercial junk removal — nothing we can't haul.",
+        "title": "ROOFING SERVICES",
+        "description": "Professional roof installation, repair, and replacement for residential and commercial properties.",
         "icon": "Home",
         "items": [
-          "Residential Junk Removal",
-          "Commercial Junk Removal",
-          "Property Cleanouts",
-          "Estate Cleanouts"
+          "Roof Installation",
+          "Roof Repair",
+          "Roof Replacement",
+          "Roof Inspection"
         ],
         "features": [
           "Free Estimates",
-          "Fast & Affordable",
-          "On Time, Every Time"
+          "Licensed & Insured",
+          "Quality Craftsmanship"
         ]
       },
       {
-        "title": "HEAVY HAULING & DEBRIS",
-        "description": "Construction debris, demolition cleanup, and dump truck services for contractors.",
+        "title": "STORM DAMAGE & RESTORATION",
+        "description": "Hail and wind damage restoration, insurance claim assistance, and emergency roofing services.",
         "icon": "ClipboardCheck",
         "items": [
-          "Construction Debris Removal",
-          "Demolition Cleanup",
-          "Dump Truck Services",
-          "Contractor Hauling"
+          "Storm Damage Inspection",
+          "Hail Damage Repair",
+          "Wind Damage Restoration",
+          "Insurance Claim Assistance"
         ],
         "features": [
-          "No Job Too Big",
-          "Competitive Pricing",
-          "Reliable & Professional"
+          "Insurance Claim Help",
+          "Fast Response",
+          "Thorough Inspections"
         ]
       },
       {
-        "title": "MATERIALS & AGGREGATE",
-        "description": "Dirt, gravel, aggregate hauling, and landscape material delivery.",
+        "title": "EXTERIOR SERVICES",
+        "description": "Siding installation, gutter cleaning, attic venting, and complete exterior protection solutions.",
         "icon": "Sun",
         "items": [
-          "Dirt Hauling",
-          "Gravel Hauling",
-          "Aggregate Hauling",
-          "Landscape Material Delivery"
+          "Siding Installation",
+          "Gutter Cleaning",
+          "Attic Venting",
+          "Exterior Repairs"
         ],
         "features": [
-          "Heavy Duty Fleet",
-          "Residential & Commercial",
-          "Dependable Results"
+          "Energy Efficient",
+          "Curb Appeal",
+          "Durable Materials"
         ]
       }
     ],
@@ -79,12 +79,12 @@
     ],
     "stats": [
       {
-        "value": "Bay Area",
+        "value": "Omaha",
         "label": "Service Area",
         "icon": "MapPin"
       },
       {
-        "value": "San Jose",
+        "value": "Nebraska",
         "label": "Headquarters",
         "icon": "Home"
       },
@@ -94,16 +94,16 @@
         "icon": "Star"
       },
       {
-        "value": "Heavy Duty",
-        "label": "Fleet",
+        "value": "Licensed",
+        "label": "& Insured",
         "icon": "Shield"
       }
     ],
     "cta": {
-      "title": "Get Your Free Estimate Today",
-      "description": "Heavy duty hauling and junk removal for residential, commercial, and contractor clients across the Bay Area and San Jose.",
+      "title": "Get Your Free Roofing Estimate Today",
+      "description": "Professional roofing, storm damage restoration, and exterior solutions for homeowners and businesses across Omaha and surrounding Nebraska communities.",
       "buttonText": "Call Now",
-      "buttonLink": "tel:+14081234567"
+      "buttonLink": "tel:+14026098072"
     },
     "ctaButton": {
       "label": "Get Free Quote",
@@ -112,17 +112,17 @@
     }
   },
   "hero": {
-    "badge": "Nothing We Can't Haul. Nothing We Can't Handle.",
+    "badge": "Trusted Roofing Contractor in Omaha, NE",
     "headlines": [
-      "Big Junk.",
-      "Bigger Trucks.",
-      "Serving San Jose & The Bay Area"
+      "Quality Roofing.",
+      "Lasting Protection.",
+      "Serving Omaha "
     ],
-    "description": "Heavy duty hauling and junk removal company serving San Jose, CA and the surrounding Bay Area. Free estimates. On time, every time.",
+    "description": "Professional roofing, storm damage restoration, and exterior solutions built to protect your property. Licensed and insured roofing contractor serving Omaha, Bellevue, Sarpy County, and surrounding Nebraska communities.",
     "buttons": [
       {
         "text": "Call Now",
-        "href": "tel:+14081234567",
+        "href": "tel:+14026098072",
         "primary": true,
         "icon": "FiArrowRight"
       },
@@ -135,17 +135,17 @@
     ],
     "stats": [
       {
-        "value": "San Jose, CA",
+        "value": "Omaha, NE",
         "label": "Headquarters",
         "icon": "FiMapPin"
       },
       {
-        "value": "Bay Area",
-        "label": "Service Area",
+        "value": "Free",
+        "label": "Estimates",
         "icon": "FiMessageSquare"
       },
       {
-        "value": "(408) 123-4567",
+        "value": "(402) 609-8072",
         "label": "Call Now",
         "icon": "FiArrowRight"
       }
@@ -155,14 +155,14 @@
     "badge": "Get to Know Us",
     "headline": {
       "prefix": "Welcome to",
-      "highlight": "Los Carnales Junk Remover",
+      "highlight": "Advanced Roofing & Exteriors",
       "suffix": ""
     },
-    "description": "We're a heavy duty hauling and junk removal company built on strength, reliability, and no-nonsense service. Based in <span class=\"font-semibold text-primary\">San Jose, California</span>, we specialize in residential and commercial junk removal, construction debris hauling, demolition cleanup, dump truck services, and landscape material delivery. Nothing we can't haul. Nothing we can't handle.",
+    "description": "We're a trusted roofing contractor built on quality craftsmanship, honest communication, and customer satisfaction. Based in <span class=\"font-semibold text-primary\">Omaha, Nebraska</span>, we specialize in roof installation, roof repair, roof replacement, storm damage restoration, siding installation, gutter cleaning, and attic venting. Professional roofing and exterior solutions built to protect your property.",
     "image": {
-      "src": "LosCarnalesCrew",
-      "alt": "Los Carnales Junk Remover professional crew and heavy duty fleet",
-      "badge": "Carnales Strength. Carnales Service."
+      "src": "AdvancedRoofingCrew",
+      "alt": "Advanced Roofing & Exteriors professional crew and roofing fleet",
+      "badge": "Quality Craftsmanship. Honest Service."
     },
     "stats": [
       {
@@ -173,7 +173,7 @@
       {
         "value": 100,
         "suffix": "%",
-        "label": "Reliable Service"
+        "label": "Satisfaction Guaranteed"
       },
       {
         "value": "Free",
@@ -184,7 +184,7 @@
     "buttons": [
       {
         "text": "CALL FOR FREE ESTIMATE",
-        "href": "tel:+14081234567",
+        "href": "tel:+14026098072",
         "primary": true
       },
       {
@@ -195,36 +195,36 @@
     ],
     "trustBadges": {
       "founded": "",
-      "headquarters": "San Jose, California"
+      "headquarters": "Omaha, Nebraska"
     }
   },
   "aboutStory": {
     "badge": "Our Story",
     "headline": {
       "prefix": "Built on",
-      "highlight": "Carnales Strength",
+      "highlight": "Quality & Trust",
       "suffix": ""
     },
     "description": [
-      "Los Carnales Junk Remover was founded on a simple belief: when people need stuff hauled away, they shouldn't have to worry about whether the job is too big, too messy, or too complicated. Homeowners staring at garages full of junk. Contractors drowning in construction debris. Property managers facing full property cleanouts. Landscapers needing materials delivered fast. Everyone had the same problem — finding a hauler who would actually show up, work hard, and charge a fair price. That's where we come in.",
-      "We built Los Carnales Junk Remover with a heavy duty fleet and a no-nonsense work ethic. Dump trucks ready for the biggest jobs. A team that treats every load like family. And a commitment to doing what we say we'll do — on time, every time. From dirt, gravel, and aggregate hauling for contractors to complete estate cleanouts for families, we bring Carnales strength to every single job.",
-      "Today, Los Carnales Junk Remover proudly serves the Bay Area — San Jose and surrounding communities — handling residential junk removal, commercial cleanouts, construction debris, demolition cleanup, and landscape material delivery with the same dependable, professional service that built our reputation. Call or text for your free estimate. Nothing we can't haul. Nothing we can't handle."
+      "Advanced Roofing & Exteriors was founded on a simple belief: property owners deserve a roofing contractor they can trust. Homeowners worried about storm damage. Businesses needing reliable commercial roofing. Property managers dealing with aging exteriors. Everyone had the same problem — finding a contractor who would show up on time, communicate honestly, and deliver quality work at a fair price. That's where we come in.",
+      "We built Advanced Roofing & Exteriors with a commitment to quality craftsmanship and dependable service. Nebraska weather is demanding — high winds, hail, heavy rain, snow, and seasonal temperature changes all create wear and damage. Our team understands what it takes to protect homes and businesses with durable, long-lasting roofing and exterior systems.",
+      "Today, Advanced Roofing & Exteriors proudly serves Omaha, Bellevue, Sarpy County, Louisville, Plattsmouth, Valley, and surrounding Nebraska communities. From complete roof installations and replacements to storm damage restoration and siding solutions, we bring honest service, quality results, and lasting protection to every project."
     ],
     "image": {
-      "src": "LosCarnalesFounder",
-      "alt": "Los Carnales Junk Remover owner and heavy duty fleet",
+      "src": "AdvancedRoofingOwner",
+      "alt": "Advanced Roofing & Exteriors owner and professional team",
       "badge": "Owner & Operator"
     },
     "stats": [
       {
-        "value": "Bay Area",
-        "suffix": "",
-        "label": "Service Area"
+        "value": "Omaha",
+        "suffix": ", NE",
+        "label": "Headquarters"
       },
       {
-        "value": "San Jose",
-        "suffix": ", CA",
-        "label": "Headquarters"
+        "value": "Sarpy",
+        "suffix": " County",
+        "label": "Service Area"
       },
       {
         "value": "Free",
@@ -236,24 +236,24 @@
   "services": {
     "badge": "Our Services",
     "headline": {
-      "prefix": "Heavy Duty Hauling",
-      "highlight": "& Junk Removal",
+      "prefix": "Complete Roofing",
+      "highlight": "& Exterior Solutions",
       "suffix": ""
     },
     "description": [
-      "Los Carnales Junk Remover offers residential and commercial junk removal, construction debris hauling, demolition cleanup, dump truck services, and landscape material delivery across the Bay Area.",
-      "No job too big. No job too small. From single-item pickups to full property cleanouts and aggregate deliveries — we handle it all with Carnales strength."
+      "Advanced Roofing & Exteriors provides professional roofing services and siding contractor solutions designed to protect, restore, and improve residential and commercial properties throughout Nebraska.",
+      "From minor roof repairs to complete replacements and storm damage restoration — we handle it all with quality craftsmanship and honest communication."
     ],
     "stats": [
       {
-        "value": 3,
+        "value": 8,
         "suffix": "",
-        "label": "Core Markets"
+        "label": "Core Services"
       },
       {
         "value": 7,
         "suffix": "+",
-        "label": "Service Types"
+        "label": "Cities Served"
       },
       {
         "value": "Free",
@@ -264,180 +264,156 @@
     "services": [
       {
         "number": "01",
-        "title": "Junk Removal",
-        "description": "Residential and commercial junk removal. Furniture, appliances, electronics, and general clutter — we haul it all.",
+        "title": "Roof Inspection",
+        "description": "Thorough roof inspections to identify damage, wear, and potential issues before they become costly problems.",
         "icon": "Home",
         "tag": "Popular",
         "features": [
-          "Residential & Commercial",
-          "Fast & Affordable",
+          "Detailed Reports",
+          "Storm Damage Assessment",
           "Free Estimates"
         ]
       },
       {
         "number": "02",
-        "title": "Construction Debris Removal",
-        "description": "Removal of debris from construction and renovation projects. Drywall, lumber, concrete, roofing materials, and scrap.",
+        "title": "Roof Installation",
+        "description": "Complete roof installation for new construction and full replacements using high-quality, durable materials.",
         "icon": "Building2",
-        "tag": "Contractor",
+        "tag": "New Roofs",
         "features": [
-          "Heavy Duty Fleet",
-          "On Time, Every Time",
-          "Competitive Pricing"
+          "Quality Materials",
+          "Expert Installation",
+          "Warranty Options"
         ]
       },
       {
         "number": "03",
-        "title": "Demolition Cleanup",
-        "description": "Complete cleaning and hauling after demolition work. We clear the mess so you can move forward fast.",
+        "title": "Roof Repair",
+        "description": "Professional roof repairs for leaks, damaged shingles, flashing issues, and general wear and tear.",
         "icon": "Hammer",
-        "tag": "Heavy Duty",
+        "tag": "Repairs",
         "features": [
-          "Large-Scale Hauling",
-          "Professional Crew",
-          "Dependable Results"
+          "Fast Response",
+          "Leak Detection",
+          "Long-Lasting Fixes"
         ]
       },
       {
         "number": "04",
-        "title": "Dump Truck Services",
-        "description": "Professional dump truck services for contractors, construction companies, and industrial clients across the Bay Area.",
+        "title": "Storm Damage Roofing",
+        "description": "Hail and wind damage restoration with insurance claim assistance to make the repair process stress-free.",
         "icon": "Shield",
-        "tag": "Industrial",
+        "tag": "Storm Damage",
         "features": [
-          "Heavy Duty Fleet",
-          "Multiple Trucks Available",
-          "Contractor Friendly"
+          "Insurance Claim Help",
+          "Emergency Repairs",
+          "Thorough Inspections"
         ]
       },
       {
         "number": "05",
-        "title": "Dirt, Gravel & Aggregate Hauling",
-        "description": "Transportation and hauling of construction materials including dirt, gravel, sand, and aggregate for any size project.",
+        "title": "Attic Venting",
+        "description": "Proper attic ventilation installation and repairs to improve energy efficiency and extend roof life.",
         "icon": "Droplets",
-        "tag": "Materials",
+        "tag": "Energy Efficient",
         "features": [
-          "Bulk Delivery",
-          "Residential & Commercial",
-          "Fast Turnaround"
+          "Reduced Energy Costs",
+          "Prevents Moisture",
+          "Extends Roof Life"
         ]
       },
       {
         "number": "06",
-        "title": "Landscape Material Delivery",
-        "description": "Delivery of mulch, topsoil, stone, and other landscape materials for residential and commercial projects.",
+        "title": "Gutter Cleaning",
+        "description": "Professional gutter cleaning services to prevent water damage and maintain proper drainage.",
         "icon": "Wrench",
-        "tag": "Landscaping",
+        "tag": "Maintenance",
         "features": [
-          "Direct Delivery",
-          "Quality Materials",
-          "Flexible Scheduling"
+          "Prevents Water Damage",
+          "Improves Drainage",
+          "Extends Gutter Life"
         ]
       },
       {
         "number": "07",
-        "title": "Property Cleanouts",
-        "description": "Complete cleanout services for homes, businesses, rental properties, and estates. We do all the heavy lifting.",
+        "title": "Siding Services",
+        "description": "Professional siding installation and repair to improve durability, energy efficiency, and curb appeal.",
         "icon": "Tool",
-        "tag": "Cleanout",
+        "tag": "Siding",
         "features": [
-          "Full Property Cleanouts",
-          "Estate & Rental Ready",
-          "Fast & Thorough"
+          "Multiple Materials",
+          "Energy Efficient",
+          "Curb Appeal"
         ]
       },
       {
         "number": "08",
-        "title": "Contractor Hauling Services",
-        "description": "Professional hauling solutions for contractors and construction companies. Consistent, reliable, and built for the trades.",
+        "title": "Exterior Repair Solutions",
+        "description": "Complete exterior repairs for weather damage, aging materials, and general property maintenance.",
         "icon": "Layers",
-        "tag": "Commercial",
+        "tag": "Exterior",
         "features": [
-          "General Contractors",
-          "Renovation Companies",
-          "Demolition Contractors"
-        ]
-      },
-      {
-        "number": "09",
-        "title": "Commercial Junk Removal",
-        "description": "Office cleanouts, retail fixture removal, warehouse clearing, and commercial property junk removal with minimal disruption.",
-        "icon": "Palette",
-        "tag": "Commercial",
-        "features": [
-          "Businesses & Offices",
-          "Warehouses",
-          "Property Management"
-        ]
-      },
-      {
-        "number": "10",
-        "title": "Residential Junk Removal",
-        "description": "Homeowner junk removal — old furniture, appliances, garage cleanouts, and yard debris. Fast, affordable, no hidden fees.",
-        "icon": "Grid",
-        "tag": "Residential",
-        "features": [
-          "Single Items to Full Loads",
-          "Same-Week Available",
-          "Free Estimates"
+          "Weather Damage",
+          "Preventive Maintenance",
+          "Quality Workmanship"
         ]
       }
     ],
     "cta": {
-      "title": "Not Sure If We Can Haul It?",
-      "description": "If it needs to go, we can haul it. Call or text for your free estimate today — no job too big or too small.",
+      "title": "Not Sure What Your Roof Needs?",
+      "description": "Schedule a free roof inspection today. Our experts will assess your property and provide honest recommendations.",
       "buttonText": "Call Now",
-      "buttonLink": "tel:+14081234567"
+      "buttonLink": "tel:+14026098072"
     }
   },
   "whyChooseUs": {
     "section": {
       "badge": "WHY CHOOSE US",
-      "headline": "What Makes <span class=\"text-primary\">Los Carnales Junk Remover</span> Different",
-      "description": "When you need heavy duty hauling and junk removal, you need a team with the strength, the fleet, and the work ethic to get it done right — the first time."
+      "headline": "What Makes <span class=\"text-primary\">Advanced Roofing & Exteriors</span> Different",
+      "description": "When you need roofing and exterior services, you need a contractor with the experience, the materials, and the work ethic to protect your property right — the first time."
     },
     "features": [
       {
         "icon": "Award",
-        "title": "Reliable & Professional Service",
-        "description": "We show up when we say we will. On time, every time. Professional crew, clean work, and no surprises."
+        "title": "Quality Craftsmanship",
+        "description": "We use high-quality materials and proven installation methods to ensure every project is completed properly."
       },
       {
         "icon": "MessageSquare",
-        "title": "Free Estimates",
-        "description": "No-obligation quotes with transparent pricing. No hidden fees — just honest, competitive rates."
+        "title": "Honest Communication",
+        "description": "Clear, upfront pricing and honest recommendations. No hidden fees — just dependable service."
       },
       {
         "icon": "Globe",
         "title": "Residential & Commercial",
-        "description": "Homeowners, contractors, property managers, landscapers, and industrial clients — we serve them all."
+        "description": "Homeowners, businesses, and property managers — we serve all property types across Nebraska."
       },
       {
         "icon": "Clock",
-        "title": "Fast & Affordable",
-        "description": "Quick response times, efficient crews, and pricing that makes sense for every budget."
+        "title": "Fast & Reliable",
+        "description": "Quick response times, dependable scheduling, and crews that show up when they say they will."
       },
       {
         "icon": "Shield",
-        "title": "Heavy Duty Fleet",
-        "description": "Dump trucks and equipment built for the biggest, toughest jobs. Nothing we can't handle."
+        "title": "Licensed & Insured",
+        "description": "Fully licensed and insured roofing contractor committed to protecting your property and investment."
       },
       {
         "icon": "Check",
-        "title": "No Job Too Big or Too Small",
-        "description": "Single-item pickup to full demolition cleanup — we bring the same Carnales strength to every job."
+        "title": "Storm Damage Experts",
+        "description": "Specialized in hail and wind damage restoration with insurance claim assistance to reduce stress."
       }
     ],
     "stats": [
       {
-        "value": "Bay Area",
-        "suffix": "",
-        "label": "Service Area"
+        "value": "Omaha",
+        "suffix": ", NE",
+        "label": "Based In"
       },
       {
-        "value": "San Jose",
-        "suffix": "",
-        "label": "Based In"
+        "value": "Sarpy",
+        "suffix": " County",
+        "label": "Service Area"
       },
       {
         "value": "Free",
@@ -445,24 +421,24 @@
         "label": "Estimates"
       },
       {
-        "value": "(408) 123-4567",
+        "value": "(402) 609-8072",
         "suffix": "",
         "label": "Call Now"
       }
     ],
     "cta": {
       "badge": "GET STARTED",
-      "title": "Ready to Haul <span class=\"\">It Away?</span>",
-      "description": "Call or text (408) 123-4567 for your free estimate today. Carnales strength. Carnales service. Carnales results.",
+      "title": "Ready to <span class=\"\">Protect Your Property?</span>",
+      "description": "Call or text (402) 609-8072 for your free estimate today. Quality craftsmanship. Honest service. Lasting protection.",
       "trustBadges": [
-        "Reliable & Professional",
+        "Licensed & Insured",
         "Free Estimates",
-        "No Job Too Big"
+        "Storm Damage Experts"
       ],
       "buttons": [
         {
           "text": "Call Now",
-          "href": "tel:+14081234567",
+          "href": "tel:+14026098072",
           "primary": true
         },
         {
@@ -481,58 +457,58 @@
     "projects": [
       {
         "number": "01",
-        "title": "San Jose Construction Debris Haul",
-        "category": "Construction",
+        "title": "Omaha Residential Roof Replacement",
+        "category": "Roofing",
         "image": "portfolio1",
-        "location": "San Jose, CA",
+        "location": "Omaha, NE",
         "year": "2025",
         "accent": "from-primary to-primary/80",
-        "scope": "Construction Debris Removal",
-        "desc": "Full site cleanup after major renovation. Multiple truckloads of drywall, lumber, and scrap removed."
+        "scope": "Complete Roof Replacement",
+        "desc": "Full roof replacement after storm damage. Quality materials and expert installation completed on schedule."
       },
       {
         "number": "02",
-        "title": "Oakland Demolition Cleanup",
-        "category": "Demolition",
+        "title": "Bellevue Commercial Roofing",
+        "category": "Commercial",
         "image": "portfolio2",
-        "location": "Oakland, CA",
+        "location": "Bellevue, NE",
         "year": "2025",
         "accent": "from-primary to-primary/70",
-        "scope": "Demolition Hauling",
-        "desc": "Complete debris removal after commercial demolition. Heavy duty fleet handled it all."
+        "scope": "Commercial Roof Installation",
+        "desc": "Complete commercial roofing system installation with minimal business disruption."
       },
       {
         "number": "03",
-        "title": "Fremont Aggregate Delivery",
-        "category": "Materials",
+        "title": "Sarpy County Storm Restoration",
+        "category": "Storm Damage",
         "image": "portfolio3",
-        "location": "Fremont, CA",
+        "location": "Sarpy County, NE",
         "year": "2024",
         "accent": "from-primary/90 to-primary/60",
-        "scope": "Gravel & Dirt Hauling",
-        "desc": "Multiple loads of gravel and aggregate delivered on schedule for large construction project."
+        "scope": "Hail & Wind Damage Repair",
+        "desc": "Comprehensive storm damage restoration with full insurance claim assistance."
       },
       {
         "number": "04",
-        "title": "Sunnyvale Estate Cleanout",
-        "category": "Residential",
+        "title": "Louisville Siding Installation",
+        "category": "Siding",
         "image": "portfolio4",
-        "location": "Sunnyvale, CA",
+        "location": "Louisville, NE",
         "year": "2025",
         "accent": "from-primary to-primary/80",
-        "scope": "Full Estate Cleanout",
-        "desc": "Complete house cleanout including furniture, appliances, and years of accumulated belongings."
+        "scope": "Complete Siding Replacement",
+        "desc": "Full siding replacement improving energy efficiency and curb appeal for residential property."
       },
       {
         "number": "05",
-        "title": "San Jose Landscape Delivery",
-        "category": "Landscaping",
+        "title": "Plattsmouth Roof Repair",
+        "category": "Repair",
         "image": "portfolio5",
-        "location": "San Jose, CA",
+        "location": "Plattsmouth, NE",
         "year": "2024",
         "accent": "from-primary/80 to-primary/60",
-        "scope": "Mulch & Topsoil Delivery",
-        "desc": "Bulk landscape material delivery for residential landscaping project — on time and on budget."
+        "scope": "Emergency Roof Repair",
+        "desc": "Emergency leak repair and preventative maintenance to extend roof life and prevent further damage."
       }
     ],
     "button": {
@@ -544,80 +520,80 @@
     "section": {
       "badge": "Client Testimonials",
       "headline": "What Our Customers Say",
-      "description": "Hear from homeowners, contractors, and businesses who trust Los Carnales Junk Remover for heavy duty hauling across the Bay Area.",
-      "featured": "Trusted Hauling & Junk Removal in San Jose & The Bay Area"
+      "description": "Hear from homeowners and businesses who trust Advanced Roofing & Exteriors for professional roofing and exterior services across Nebraska.",
+      "featured": "Trusted Roofing & Exterior Services in Omaha & Surrounding Areas"
     },
     "testimonials": [
       {
         "id": 1,
-        "name": "Dave R.",
-        "position": "General Contractor",
-        "company": "San Jose",
-        "avatar": "DR",
-        "text": "Los Carnales is my go-to for construction debris removal. They show up on time, work fast, and their pricing is fair. Nothing they can't handle."
+        "name": "Mike J.",
+        "position": "Homeowner",
+        "company": "Omaha",
+        "avatar": "MJ",
+        "text": "Advanced Roofing & Exteriors replaced our roof after hail damage. They handled everything with our insurance and the work was outstanding. Highly recommend."
       },
       {
         "id": 2,
-        "name": "Lisa M.",
-        "position": "Property Manager",
-        "company": "Oakland",
-        "avatar": "LM",
-        "text": "We manage multiple rental properties and Los Carnales handles all our cleanouts. Professional, dependable, and always on time. Highly recommend."
+        "name": "Sarah K.",
+        "position": "Business Owner",
+        "company": "Bellevue",
+        "avatar": "SK",
+        "text": "Professional, honest, and reliable. They installed a new roof on our commercial building with minimal disruption to our business. Excellent workmanship."
       },
       {
         "id": 3,
-        "name": "Tony S.",
-        "position": "Demolition Contractor",
-        "company": "Bay Area",
-        "avatar": "TS",
-        "text": "These guys are the real deal. Heavy duty fleet, hard working crew, and they never complain about the size of the job. My kind of company."
+        "name": "Tom W.",
+        "position": "Property Manager",
+        "company": "Sarpy County",
+        "avatar": "TW",
+        "text": "We manage multiple properties and Advanced Roofing handles all our roofing needs. They show up on time, communicate clearly, and do quality work."
       },
       {
         "id": 4,
-        "name": "Karen W.",
+        "name": "Rachel D.",
         "position": "Homeowner",
-        "company": "San Jose",
-        "avatar": "KW",
-        "text": "Called Los Carnales for a garage cleanout and they had it done in hours. Fair price, friendly crew, and they took everything. Can't ask for more."
+        "company": "Louisville",
+        "avatar": "RD",
+        "text": "From the free inspection to the final cleanup, everything was professional. They explained our options clearly and the new roof looks amazing."
       },
       {
         "id": 5,
-        "name": "Los Carnales Team",
-        "position": "Heavy Duty Hauling",
-        "company": "Los Carnales Junk Remover",
-        "avatar": "LC",
-        "text": "We built Los Carnales Junk Remover to give the Bay Area a hauler they can count on. No job too big, no job too small. Carnales strength. Carnales service. Carnales results."
+        "name": "Advanced Roofing Team",
+        "position": "Roofing & Exterior Experts",
+        "company": "Advanced Roofing & Exteriors",
+        "avatar": "AR",
+        "text": "We built Advanced Roofing & Exteriors to give Nebraska property owners a contractor they can trust. Quality craftsmanship. Honest service. Lasting protection."
       }
     ],
     "videos": [
       {
         "id": "v1",
         "videoId": "dQw4w9WgXcQ",
-        "title": "Construction Debris Haul-Off",
-        "name": "Dave R."
+        "title": "Roof Replacement Project",
+        "name": "Mike J."
       },
       {
         "id": "v2",
         "videoId": "dQw4w9WgXcQ",
-        "title": "Property Cleanout Service",
-        "name": "Lisa M."
+        "title": "Storm Damage Restoration",
+        "name": "Sarah K."
       },
       {
         "id": "v3",
         "videoId": "dQw4w9WgXcQ",
-        "title": "Demolition Cleanup Project",
-        "name": "Tony S."
+        "title": "Commercial Roofing Project",
+        "name": "Tom W."
       },
       {
         "id": "v4",
         "videoId": "dQw4w9WgXcQ",
-        "title": "Dump Truck Services Overview",
-        "name": "Los Carnales Team"
+        "title": "Siding Installation Overview",
+        "name": "Advanced Roofing Team"
       }
     ],
     "stats": {
       "reviewPlatform": "Google Reviews",
-      "satisfactionFocus": "100% Reliable Service",
+      "satisfactionFocus": "100% Customer Satisfaction",
       "totalVideos": 12
     }
   },
@@ -625,7 +601,7 @@
     "section": {
       "badge": "Knowledge Base",
       "headline": "Frequently Asked Questions",
-      "description": "Straight answers about our junk removal, heavy hauling, and dump truck services."
+      "description": "Straight answers about our roofing, storm damage, and exterior services."
     },
     "categories": [
       {
@@ -634,43 +610,43 @@
         "icon": null
       },
       {
-        "id": "junk",
-        "label": "Junk Removal",
+        "id": "roofing",
+        "label": "Roofing",
         "icon": "Home"
       },
       {
-        "id": "hauling",
-        "label": "Heavy Hauling",
+        "id": "storm",
+        "label": "Storm Damage",
         "icon": "Shield"
       },
       {
-        "id": "materials",
-        "label": "Materials",
+        "id": "exterior",
+        "label": "Exterior",
         "icon": "Hammer"
       }
     ],
     "items": [
       {
         "id": 1,
-        "category": "junk",
-        "question": "What can you haul away?",
-        "answer": "Everything. Furniture, appliances, construction debris, demolition waste, yard debris, estate cleanouts, and commercial junk. Nothing we can't haul.",
+        "category": "roofing",
+        "question": "How do I know if my roof needs repair or replacement?",
+        "answer": "Schedule a free roof inspection. Our experts will assess the condition of your roof, identify any damage, and provide honest recommendations based on your roof's age, condition, and your budget.",
         "metadata": [
           {
-            "label": "Residential",
-            "value": "Yes — everything"
+            "label": "Inspection",
+            "value": "Free"
           },
           {
-            "label": "Commercial",
-            "value": "Yes — all industries"
+            "label": "Recommendation",
+            "value": "Honest & Clear"
           }
         ]
       },
       {
         "id": 2,
-        "category": "junk",
+        "category": "roofing",
         "question": "Do you offer free estimates?",
-        "answer": "Yes. Free, no-obligation estimates on every job. Call or text (408) 123-4567 for your quote — no hidden fees, ever.",
+        "answer": "Yes. Free, no-obligation estimates on every project. Call (402) 609-8072 for your quote — no hidden fees, ever.",
         "metadata": [
           {
             "label": "Cost",
@@ -684,140 +660,140 @@
       },
       {
         "id": 3,
-        "category": "hauling",
-        "question": "What areas do you serve?",
-        "answer": "The Bay Area — San Jose, CA and surrounding communities including Oakland, Fremont, Sunnyvale, and throughout the region.",
+        "category": "storm",
+        "question": "Do you help with insurance claims?",
+        "answer": "Yes. We specialize in storm damage restoration and provide full insurance claim assistance. We'll document damage, meet with adjusters, and help make the process as stress-free as possible.",
         "metadata": [
           {
-            "label": "Primary",
-            "value": "San Jose, CA"
+            "label": "Insurance",
+            "value": "Full assistance"
           },
           {
-            "label": "Surrounding",
-            "value": "Bay Area"
+            "label": "Process",
+            "value": "Stress-free"
           }
         ]
       },
       {
         "id": 4,
-        "category": "hauling",
-        "question": "Do you work with contractors?",
-        "answer": "Absolutely. We're contractor-friendly — construction debris removal, demolition cleanup, dump truck services, and aggregate hauling built for the trades.",
+        "category": "storm",
+        "question": "What areas do you serve?",
+        "answer": "Omaha, Bellevue, Louisville, Plattsmouth, Valley, Sarpy County, and surrounding Nebraska communities.",
         "metadata": [
           {
-            "label": "Contractors",
-            "value": "General, demo, renovation"
+            "label": "Primary",
+            "value": "Omaha, NE"
           },
           {
-            "label": "Service",
-            "value": "On time, every time"
+            "label": "Surrounding",
+            "value": "Sarpy County & more"
           }
         ]
       },
       {
         "id": 5,
-        "category": "junk",
-        "question": "Do you do property cleanouts?",
-        "answer": "Yes. Full property cleanouts for homes, businesses, rental properties, estates, and foreclosures. We handle all the heavy lifting.",
+        "category": "roofing",
+        "question": "How long does a roof replacement take?",
+        "answer": "Most residential roof replacements are completed in 1-3 days depending on the size and complexity of the project. We'll provide a clear timeline before work begins.",
         "metadata": [
           {
-            "label": "Rentals & Estates",
-            "value": "Yes"
+            "label": "Residential",
+            "value": "1-3 days typical"
           },
           {
-            "label": "Businesses",
-            "value": "Yes"
+            "label": "Timeline",
+            "value": "Clear upfront"
           }
         ]
       },
       {
         "id": 6,
-        "category": "materials",
-        "question": "Do you deliver landscape materials?",
-        "answer": "Yes. We deliver mulch, topsoil, stone, gravel, sand, and aggregate for residential and commercial landscaping projects.",
+        "category": "exterior",
+        "question": "Do you install siding?",
+        "answer": "Yes. We provide professional siding installation and repair services to improve durability, energy efficiency, and curb appeal for your property.",
         "metadata": [
           {
             "label": "Materials",
-            "value": "Mulch, soil, stone, gravel"
+            "value": "Multiple options"
           },
           {
-            "label": "Delivery",
-            "value": "Direct to site"
+            "label": "Benefits",
+            "value": "Energy efficient"
           }
         ]
       },
       {
         "id": 7,
-        "category": "hauling",
-        "question": "How big is your fleet?",
-        "answer": "We run a heavy duty fleet with multiple dump trucks ready for jobs of any size. No job too big — we bring Carnales strength every time.",
+        "category": "roofing",
+        "question": "Are you licensed and insured?",
+        "answer": "Yes. Advanced Roofing & Exteriors is a fully licensed and insured roofing contractor committed to protecting your property and investment.",
         "metadata": [
           {
-            "label": "Fleet Type",
-            "value": "Heavy duty dump trucks"
+            "label": "License",
+            "value": "Fully licensed"
           },
           {
-            "label": "Capacity",
-            "value": "Multiple trucks available"
+            "label": "Insurance",
+            "value": "Fully insured"
           }
         ]
       },
       {
         "id": 8,
-        "category": "junk",
-        "question": "Do you take single items?",
-        "answer": "Yes. No job too small. Single furniture pieces, one appliance, a few boxes — we haul it all. Same professional service regardless of job size.",
+        "category": "exterior",
+        "question": "Do you clean gutters?",
+        "answer": "Yes. Professional gutter cleaning services to prevent water damage and maintain proper drainage for your property.",
         "metadata": [
           {
-            "label": "Single Items",
-            "value": "Yes"
+            "label": "Service",
+            "value": "Gutter cleaning"
           },
           {
-            "label": "Full Loads",
-            "value": "Also yes"
+            "label": "Benefit",
+            "value": "Prevents damage"
           }
         ]
       },
       {
         "id": 9,
-        "category": "hauling",
-        "question": "How fast can you respond?",
-        "answer": "We pride ourselves on fast response. Call or text for your free estimate and we'll get you scheduled quickly — often same-week.",
+        "category": "storm",
+        "question": "How fast can you respond to storm damage?",
+        "answer": "We provide fast response for storm damage emergencies. Call (402) 609-8072 and we'll schedule an inspection quickly to assess and address the damage.",
         "metadata": [
           {
             "label": "Response",
-            "value": "Fast — call or text"
+            "value": "Fast"
           },
           {
-            "label": "Scheduling",
-            "value": "Same-week available"
+            "label": "Emergency",
+            "value": "Available"
           }
         ]
       },
       {
         "id": 10,
-        "category": "materials",
-        "question": "Do you haul dirt and gravel?",
-        "answer": "Yes. Dirt, gravel, aggregate, sand — we haul and deliver bulk materials for contractors, landscapers, and residential projects.",
+        "category": "exterior",
+        "question": "Do you install attic ventilation?",
+        "answer": "Yes. Proper attic ventilation installation and repairs to improve energy efficiency, prevent moisture issues, and extend the life of your roof.",
         "metadata": [
           {
-            "label": "Dirt",
-            "value": "Yes"
+            "label": "Benefits",
+            "value": "Energy savings"
           },
           {
-            "label": "Gravel & Aggregate",
-            "value": "Yes"
+            "label": "Roof Life",
+            "value": "Extended"
           }
         ]
       }
     ],
     "knowledgeCard": {
       "title": "Still Have Questions?",
-      "description": "Call or text us — we'll give you a straight answer and a free estimate. Nothing we can't haul. Nothing we can't handle.",
+      "description": "Call or text us — we'll give you a straight answer and a free estimate. Quality craftsmanship. Honest service. Lasting protection.",
       "buttons": [
         {
           "text": "Call Now",
-          "href": "tel:+14081234567",
+          "href": "tel:+14026098072",
           "primary": true
         },
         {
@@ -831,44 +807,44 @@
   "quote": {
     "section": {
       "badge": "GET STARTED",
-      "headline": "Request Your <span class=\"font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-primary/80\">Free Estimate Today</span>",
-      "description": "Heavy duty hauling, junk removal, and dump truck services. Free estimates — no hidden fees, no job too big."
+      "headline": "Request Your <span class=\"font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-primary/80\">Free Roofing Estimate Today</span>",
+      "description": "Professional roofing, storm damage restoration, and exterior solutions. Free estimates — no hidden fees, licensed and insured."
     },
     "services": [
       {
         "id": 1,
-        "title": "Junk Removal",
-        "desc": "Residential & commercial",
+        "title": "Roof Inspection",
+        "desc": "Thorough assessment",
         "icon": "⌗"
       },
       {
         "id": 2,
-        "title": "Construction Debris",
-        "desc": "Renovation & demo cleanup",
+        "title": "Roof Installation",
+        "desc": "New & replacement",
         "icon": "⎔"
       },
       {
         "id": 3,
-        "title": "Dump Truck Services",
-        "desc": "Heavy duty hauling",
+        "title": "Storm Damage",
+        "desc": "Hail & wind repair",
         "icon": "⌖"
       },
       {
         "id": 4,
-        "title": "Dirt & Gravel Hauling",
-        "desc": "Bulk material delivery",
+        "title": "Siding Services",
+        "desc": "Installation & repair",
         "icon": "⌘"
       },
       {
         "id": 5,
-        "title": "Property Cleanouts",
-        "desc": "Estates, rentals, businesses",
+        "title": "Gutter Cleaning",
+        "desc": "Prevent water damage",
         "icon": "⚡"
       },
       {
         "id": 6,
-        "title": "Landscape Materials",
-        "desc": "Mulch, soil, stone delivery",
+        "title": "Attic Venting",
+        "desc": "Energy efficiency",
         "icon": "◈"
       }
     ],
@@ -882,12 +858,12 @@
         "label": "Commercial"
       },
       {
-        "value": "contractor",
-        "label": "Contractor"
+        "value": "storm-damage",
+        "label": "Storm Damage"
       },
       {
-        "value": "industrial",
-        "label": "Industrial"
+        "value": "insurance",
+        "label": "Insurance Claim"
       }
     ],
     "timelines": [
@@ -908,112 +884,106 @@
         "label": "Future Project"
       }
     ],
-    "email": "loscarnalesjunk@gmail.com",
+    "email": "advancedroofingomaha@gmail.com",
     "success": {
       "title": "Estimate Request Received",
-      "message": "Your project details have been sent to the team at Los Carnales Junk Remover.",
-      "response": "We'll respond promptly with your free estimate. Carnales strength. Carnales service. Carnales results.",
+      "message": "Your project details have been sent to the team at Advanced Roofing & Exteriors.",
+      "response": "We'll respond promptly with your free estimate. Quality craftsmanship. Honest service. Lasting protection.",
       "buttonText": "Close"
     }
   },
   "footer": {
     "company": {
-      "name": "Los Carnales Junk Remover",
-      "tagline": "NOTHING WE CAN'T HAUL. NOTHING WE CAN'T HANDLE.",
-      "description": "Heavy duty hauling and junk removal serving San Jose, CA and the surrounding Bay Area. Construction debris, demolition cleanup, dump truck services, junk removal, and landscape material delivery. Free estimates. On time, every time."
+      "name": "Advanced Roofing & Exteriors",
+      "tagline": "QUALITY CRAFTSMANSHIP. HONEST SERVICE. LASTING PROTECTION.",
+      "description": "Professional roofing, storm damage restoration, and exterior solutions serving Omaha, Bellevue, Sarpy County, Louisville, Plattsmouth, Valley, and surrounding Nebraska communities. Licensed and insured roofing contractor. Free estimates."
     },
     "services": {
       "title": "Our Services",
       "main": [
         {
-          "label": "Junk Removal",
-          "href": "/junk-removal",
+          "label": "Roof Inspection",
+          "href": "/roof-inspection",
           "icon": "Home"
         },
         {
-          "label": "Construction Debris Removal",
-          "href": "/construction-debris",
+          "label": "Roof Installation",
+          "href": "/roof-installation",
           "icon": "Building2"
         },
         {
-          "label": "Demolition Cleanup",
-          "href": "/demolition-cleanup",
+          "label": "Roof Repair",
+          "href": "/roof-repair",
           "icon": "Hammer"
         },
         {
-          "label": "Dump Truck Services",
-          "href": "/dump-truck",
+          "label": "Storm Damage Roofing",
+          "href": "/storm-damage",
           "icon": "Shield"
         },
         {
-          "label": "Dirt & Gravel Hauling",
-          "href": "/dirt-gravel",
+          "label": "Attic Venting",
+          "href": "/attic-venting",
           "icon": "Droplets"
         },
         {
-          "label": "Landscape Material Delivery",
-          "href": "/landscape-materials",
+          "label": "Gutter Cleaning",
+          "href": "/gutter-cleaning",
           "icon": "Wrench"
         },
         {
-          "label": "Property Cleanouts",
-          "href": "/property-cleanouts",
+          "label": "Siding Services",
+          "href": "/siding",
           "icon": "Tool"
         },
         {
-          "label": "Contractor Hauling",
-          "href": "/contractor-hauling",
+          "label": "Exterior Repairs",
+          "href": "/exterior-repairs",
           "icon": "Layers"
-        },
-        {
-          "label": "Commercial Junk Removal",
-          "href": "/commercial-junk",
-          "icon": "Palette"
-        },
-        {
-          "label": "Residential Junk Removal",
-          "href": "/residential-junk",
-          "icon": "Grid"
         }
       ],
       "materials": {
         "title": "Service Areas",
         "items": [
           {
-            "label": "San Jose, CA",
-            "href": "/san-jose"
+            "label": "Omaha, NE",
+            "href": "/omaha"
           },
           {
-            "label": "Oakland, CA",
-            "href": "/oakland"
+            "label": "Bellevue, NE",
+            "href": "/bellevue"
           },
           {
-            "label": "Fremont, CA",
-            "href": "/fremont"
+            "label": "Sarpy County, NE",
+            "href": "/sarpy-county"
           },
           {
-            "label": "Sunnyvale, CA",
-            "href": "/sunnyvale"
+            "label": "Louisville, NE",
+            "href": "/louisville"
           },
           {
-            "label": "Bay Area",
-            "href": "/bay-area"
+            "label": "Plattsmouth, NE",
+            "href": "/plattsmouth"
+          },
+          {
+            "label": "Valley, NE",
+            "href": "/valley"
           }
         ]
       }
     },
     "contact": {
       "title": "Contact Us",
-      "email": "loscarnalesjunk@gmail.com",
-      "phone": "+1 (408) 123-4567",
-      "address": "San Jose, California",
+      "email": "advancedroofingomaha@gmail.com",
+      "phone": "+1 (402) 609-8072",
+      "address": "Omaha, Nebraska",
       "emergency": "Call or Text Anytime",
-      "areas": "Serving San Jose & The Bay Area"
+      "areas": "Serving Omaha & Surrounding Communities"
     },
     "certifications": [
       {
-        "cert": "Heavy Duty",
-        "number": "Fleet",
+        "cert": "Licensed",
+        "number": "& Insured",
         "icon": "Award"
       },
       {
@@ -1022,13 +992,13 @@
         "icon": "MessageSquare"
       },
       {
-        "cert": "Reliable",
-        "number": "Service",
+        "cert": "Quality",
+        "number": "Craftsmanship",
         "icon": "Check"
       },
       {
-        "cert": "On Time",
-        "number": "Every Time",
+        "cert": "Storm",
+        "number": "Damage Experts",
         "icon": "Clock"
       },
       {
@@ -1037,8 +1007,8 @@
         "icon": "Building2"
       },
       {
-        "cert": "No Job",
-        "number": "Too Big",
+        "cert": "Honest",
+        "number": "Service",
         "icon": "Shield"
       }
     ],
@@ -1063,12 +1033,12 @@
       {
         "platform": "Email",
         "icon": "Mail",
-        "href": "mailto:loscarnalesjunk@gmail.com"
+        "href": "mailto:advancedroofingomaha@gmail.com"
       },
       {
         "platform": "Phone",
         "icon": "Phone",
-        "href": "tel:+14081234567"
+        "href": "tel:+14026098072"
       },
       {
         "platform": "Facebook",
@@ -1087,7 +1057,7 @@
       }
     ],
     "bottom": {
-      "copyright": "© 2026 Los Carnales Junk Remover",
+      "copyright": "© 2026 Advanced Roofing & Exteriors",
       "rights": "All rights reserved",
       "links": [
         {
@@ -1103,43 +1073,43 @@
           "href": "#contact"
         }
       ],
-      "tagline": "CARNALES STRENGTH. CARNALES SERVICE. CARNALES RESULTS."
+      "tagline": "QUALITY CRAFTSMANSHIP. HONEST SERVICE. LASTING PROTECTION."
     },
     "marquee": {
       "texts": [
-        "NOTHING WE CAN'T HAUL. NOTHING WE CAN'T HANDLE.",
-        "HEAVY DUTY FLEET • FREE ESTIMATES • ON TIME EVERY TIME",
-        "SERVING SAN JOSE & THE BAY AREA"
+        "QUALITY CRAFTSMANSHIP. HONEST SERVICE. LASTING PROTECTION.",
+        "LICENSED & INSURED • FREE ESTIMATES • STORM DAMAGE EXPERTS",
+        "SERVING OMAHA & SURROUNDING NEBRASKA COMMUNITIES"
       ]
     }
   },
   "leadership": {
     "section": {
       "badge": "OUR LEADERSHIP",
-      "headline": "Committed to <span class=\"text-primary\">Carnales Results</span>",
-      "description": "At Los Carnales Junk Remover, our leadership is driven by a singular mission: to deliver heavy duty hauling and junk removal services with strength, reliability, and no-nonsense professionalism across the Bay Area."
+      "headline": "Committed to <span class=\"text-primary\">Quality Results</span>",
+      "description": "At Advanced Roofing & Exteriors, our leadership is driven by a singular mission: to deliver professional roofing and exterior services with quality craftsmanship, honest communication, and lasting protection across Nebraska."
     },
     "ceo": {
-      "name": "Los Carnales Junk Remover Team",
+      "name": "Advanced Roofing & Exteriors Team",
       "title": "OWNER & OPERATOR",
       "quotes": [
-        "We built Los Carnales Junk Remover because we saw contractors, homeowners, and businesses struggling to find a hauler who would actually show up, work hard, and charge a fair price. Nothing we can't haul. Nothing we can't handle."
+        "We built Advanced Roofing & Exteriors because we saw property owners struggling to find a roofing contractor they could trust. Nebraska weather is demanding, and you need a contractor who understands how to protect your property with quality materials and expert installation."
       ],
       "description": [
-        "Los Carnales Junk Remover was founded with a heavy duty fleet and a no-nonsense work ethic. We understand what contractors need on a job site, what property managers expect from a cleanout crew, and what homeowners want when they're clearing out years of accumulated junk. Reliable service, competitive pricing, and on time every time — that's how we operate every single day.",
-        "Today, Los Carnales Junk Remover proudly serves San Jose, CA and the surrounding Bay Area with a comprehensive range of hauling services: residential and commercial junk removal, construction debris removal, demolition cleanup, dump truck services, dirt and gravel hauling, landscape material delivery, and complete property cleanouts. From single-item pickups to full-scale commercial projects, we bring Carnales strength, Carnales service, and Carnales results to every job."
+        "Advanced Roofing & Exteriors was founded with a commitment to quality craftsmanship and honest communication. We understand what Nebraska property owners face — high winds, hail, heavy rain, snow, and seasonal temperature changes that create wear and damage.",
+        "Today, Advanced Roofing & Exteriors proudly serves Omaha, Bellevue, Sarpy County, Louisville, Plattsmouth, Valley, and surrounding Nebraska communities with comprehensive roofing and exterior services: roof installation, roof repair, storm damage restoration, siding installation, gutter cleaning, and attic venting. "
       ],
       "social": {
         "facebook": "#",
         "instagram": "#",
         "tiktok": "#",
-        "email": "loscarnalesjunk@gmail.com"
+        "email": "advancedroofingomaha@gmail.com"
       },
       "badges": {
-        "top": "Heavy Duty Hauling",
-        "bottom": "Bay Area Proud"
+        "top": "Licensed & Insured",
+        "bottom": "Nebraska Proud"
       },
-      "alt": "Los Carnales Junk Remover - Owner & Heavy Duty Fleet"
+      "alt": "Advanced Roofing & Exteriors - Owner & Professional Team"
     }
   }
 }

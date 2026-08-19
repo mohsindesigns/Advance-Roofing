@@ -22,8 +22,8 @@ import {
   ClipboardCheck,
   Clock,
 } from "lucide-react";
-import logo from "../assets/logoreal.webp";
-import logo2nd from "../assets/logoreal.webp";
+import logo from "../assets/logoreal.jpg";
+import logo2nd from "../assets/logoreal.jpg";
 import completeData from "../src/data/completeData.json";
 
 const iconMap = {
@@ -197,7 +197,7 @@ const Navbar = () => {
               <div className="absolute left-0 top-1/2 -translate-y-[30%] h-20 w-32 sm:h-24 sm:w-40 lg:h-32 lg:w-46 flex items-center justify-center z-50">
                 <img
                   src={logo}
-                  alt="Los Carnales Junk Removal Logo"
+                  alt="Advanced Roofing & Exteriors Logo"
                   className="h-full w-full object-contain p-1 filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.6)]"
                 />
               </div>
@@ -460,7 +460,7 @@ const Navbar = () => {
                       <div className="h-12 w-36 rounded-xl flex items-center justify-center overflow-hidden">
                         <img
                           src={logo2nd}
-                          alt="Los Carnales Junk Removal Logo"
+                          alt="Advanced Roofing & Exteriors Logo"
                           className="h-full w-full object-contain"
                         />
                       </div>

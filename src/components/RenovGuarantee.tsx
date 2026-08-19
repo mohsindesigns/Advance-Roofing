@@ -31,8 +31,8 @@ const RenovGuarantee = () => {
 
               {/* Headline */}
               <h2 className="text-[2.4rem] xs:text-[2.8rem] sm:text-5xl md:text-6xl lg:text-[5.5rem] xl:text-[7rem] font-black text-foreground uppercase tracking-tighter leading-[0.85] italic">
-                Free<br />
-                <span className="text-primary">Renov</span><br />
+                Our<br />
+                <span className="text-primary">Advanced</span><br />
                 Guarantee
               </h2>
             </div>
@@ -40,13 +40,13 @@ const RenovGuarantee = () => {
             {/* Body copy */}
             <div className="space-y-3 sm:space-y-4 max-w-lg">
               <p className="text-foreground/85 text-sm sm:text-base md:text-lg leading-relaxed font-medium">
-                The Renov Team has a{"  "}
-                <strong className="text-foreground">95% customer satisfaction rating</strong>
-                {" "}and a FREE service guarantee to ensure every promise is fulfilled.
+                Advanced Roofing & Exteriors has a{"  "}
+                <strong className="text-foreground">100% customer satisfaction commitment</strong>
+                {" "}and a quality craftsmanship guarantee to ensure every promise is fulfilled.
               </p>
               <p className="text-foreground/85 text-sm sm:text-base leading-relaxed font-medium">
                 If our best efforts haven't satisfied you —{" "}
-                <strong className="text-primary">the cost of your service is on us.</strong>
+                <strong className="text-primary">we'll make it right, guaranteed.</strong>
               </p>
             </div>
 

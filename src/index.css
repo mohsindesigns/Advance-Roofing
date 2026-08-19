@@ -2,150 +2,247 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================
+   ADVANCED ROOFING & EXTERIORS
+   LIGHT PREMIUM BLUE THEME
+   ============================================================ */
+
 @layer base {
   :root {
-    /* ===============================
-       LOS CARNALES JUNK REMOVAL LIGHT THEME
-       Vivid Orange — #F97316 → Primary accent, buttons, highlights
-       Deep Orange — #EA580C → Secondary / hover brand color
-       Pure White — #FFFFFF → Main backgrounds
-       Off-White — #F8F9FA → Section backgrounds
-       Light Gray — #F1F5F9 → Card surfaces
-       Charcoal — #1E293B → Headings, body text
-       Medium Gray — #64748B → Muted / subtext
-     ================================= */
+    /* ==========================================================
+       CORE LIGHT THEME
+       ========================================================== */
 
     --background: 0 0% 100%;
-    /* #FFFFFF (Pure White) */
-    --foreground: 215 28% 17%;
-    /* #1E293B (Charcoal) */
+    /* #FFFFFF */
+
+    --foreground: 222 47% 11%;
+    /* #0F172A */
+
     --popover: 0 0% 100%;
     /* #FFFFFF */
-    --popover-foreground: 215 28% 17%;
-    /* #1E293B */
-    --card: 210 40% 96%;
-    /* #F1F5F9 (Light Gray Card) */
-    --card-foreground: 215 28% 17%;
-    /* #1E293B */
-    --primary: 25 95% 53%;
-    /* #F97316 (Vivid Orange) */
+
+    --popover-foreground: 222 47% 11%;
+    /* #0F172A */
+
+    --card: 0 0% 100%;
+    /* #FFFFFF */
+
+    --card-foreground: 222 47% 11%;
+    /* #0F172A */
+
+
+    /* ==========================================================
+       PRIMARY BRAND BLUE
+       ========================================================== */
+
+    --primary: 214 94% 43%;
+    /* #0866D5 */
+
     --primary-foreground: 0 0% 100%;
-    /* White on orange */
-    --secondary: 20 91% 48%;
-    /* #EA580C (Deep Orange) */
+    /* #FFFFFF */
+
+    --secondary: 214 91% 49%;
+    /* #0B78F0 */
+
     --secondary-foreground: 0 0% 100%;
-    --accent: 24 95% 53%;
-    /* #F97316 (Vivid Orange) */
+
+    --accent: 214 91% 49%;
+    /* #0B78F0 */
+
     --accent-foreground: 0 0% 100%;
+
+
+    /* ==========================================================
+       LIGHT SURFACES
+       ========================================================== */
+
     --muted: 210 40% 96%;
     /* #F1F5F9 */
-    --muted-foreground: 215 20% 32%;
-    /* #3E5170 (Dark readable grey) */
+
+    --muted-foreground: 215 16% 40%;
+    /* #526174 */
+
     --border: 214 32% 91%;
-    /* #E2E8F0 (Light Border) */
+    /* #E2E8F0 */
+
     --input: 214 32% 91%;
+    /* #E2E8F0 */
+
+
+    /* ==========================================================
+       STATUS
+       ========================================================== */
+
     --destructive: 0 72% 51%;
+    /* #DC2626 */
+
     --destructive-foreground: 0 0% 100%;
-    --ring: 24 95% 53%;
-    /* #F97316 */
-    --radius: 10px;
+
+    --ring: 214 94% 43%;
+
+    --radius: 8px;
+
+
+    /* ==========================================================
+       SIDEBAR
+       ========================================================== */
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 215 28% 17%;
-    --sidebar-primary: 24 95% 53%;
+    --sidebar-foreground: 222 47% 11%;
+
+    --sidebar-primary: 214 94% 43%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 20 91% 48%;
+
+    --sidebar-accent: 214 91% 49%;
     --sidebar-accent-foreground: 0 0% 100%;
+
     --sidebar-border: 214 32% 91%;
-    --sidebar-ring: 24 95% 53%;
+    --sidebar-ring: 214 94% 43%;
+
+
+    /* ==========================================================
+       FONTS
+       ========================================================== */
 
     --font-heading: 'Cinzel', serif;
     --font-body: 'Montserrat', sans-serif;
 
-    /* Global theme variables for referencing in styles */
-    --primary-hex: #F97316;
-    /* Vivid Orange */
-    --primary-hover-hex: #EA580C;
-    /* Deep Orange */
+
+    /* ==========================================================
+       GLOBAL HEX VARIABLES
+       ========================================================== */
+
+    --primary-hex: #0866D5;
+    --primary-hover-hex: #0B78F0;
+
     --dark-bg: #FFFFFF;
-    /* White Main Background */
+
     --section-bg: #F8FAFC;
-    /* Off-White Section Background */
+
     --charcoal-bg: #F1F5F9;
-    /* Light Gray Container Background */
-    --card-bg: #F8FAFC;
-    /* Light Card Surface */
+
+    --card-bg: #FFFFFF;
+
     --white-color: #FFFFFF;
-    /* Pure White */
-    --heading-color: #1E293B;
-    /* Dark Charcoal Headings */
-    --body-text-color: #1E293B;
-    /* Charcoal body text — high contrast */
-    --silver-color: #475569;
-    /* Visible slate for secondary text */
-    --light-silver-color: #CBD5E1;
-    /* Light subtext */
+
+    --heading-color: #0F172A;
+
+    --body-text-color: #334155;
+
+    --silver-color: #64748B;
+
+    --light-silver-color: #94A3B8;
+
     --graphite-color: #E2E8F0;
-    /* Light Border */
-    --steel-gray-color: #94A3B8;
-    /* Medium Gray */
+
+    --steel-gray-color: #CBD5E1;
+
+    --navy-color: #001B36;
+
+    --deep-blue-color: #002A52;
+
     --success-color: #16A34A;
+
     --danger-color: #DC2626;
 
-    /* RGB values for opacity calculation */
-    --primary-rgb: 249, 115, 22;
-    --primary-hover-rgb: 234, 88, 12;
+
+    /* ==========================================================
+       RGB VALUES
+       ========================================================== */
+
+    --primary-rgb: 8, 102, 213;
+
+    --primary-hover-rgb: 11, 120, 240;
+
     --dark-bg-rgb: 255, 255, 255;
-    --card-bg-rgb: 248, 250, 252;
-    --silver-rgb: 148, 163, 184;
-    --light-silver-rgb: 203, 213, 225;
+
+    --card-bg-rgb: 255, 255, 255;
+
+    --silver-rgb: 100, 116, 139;
+
+    --light-silver-rgb: 148, 163, 184;
+
     --graphite-rgb: 226, 232, 240;
-    --black-rgb: 30, 41, 59;
+
+    --black-rgb: 15, 23, 42;
+
     --white-rgb: 255, 255, 255;
+
     --charcoal-bg-rgb: 241, 245, 249;
   }
 }
 
+
+/* ============================================================
+   BASE
+   ============================================================ */
+
 @layer base {
 
-  /* ─── Performance: GPU compositing layer for the entire page ─── */
   html {
     scroll-behavior: smooth;
-    /* Smooth native scrolling on iOS */
+
     -webkit-overflow-scrolling: touch;
-    /* Prevent layout shift caused by scrollbar appearance */
+
     scrollbar-gutter: stable;
+
     text-size-adjust: 100%;
+
     -webkit-text-size-adjust: 100%;
+
+    background: #FFFFFF;
   }
+
 
   * {
     @apply border-border;
-    /* Use logical pixels — improves text rendering on HiDPI */
-    text-rendering: optimizeSpeed;
+
     box-sizing: border-box;
+
+    text-rendering: optimizeSpeed;
   }
+
 
   body {
     @apply bg-background text-foreground;
+
+    margin: 0;
+
+    padding: 0;
+
+    min-width: 320px;
+
     font-family: var(--font-body);
+
+    background: #FFFFFF;
+
+    color: #334155;
+
     -webkit-font-smoothing: antialiased;
+
     -moz-osx-font-smoothing: grayscale;
-    background: var(--dark-bg);
-    color: var(--body-text-color);
-    /* Prevent layout shift when scrollbar appears */
+
     overflow-x: hidden;
-    /* Smooth momentum scrolling */
+
     overscroll-behavior-y: none;
   }
 
+
   #root {
     position: relative;
+
     width: 100%;
+
     min-height: 100vh;
-    /* Isolate root so fixed children work correctly */
+
     isolation: isolate;
   }
+
+
+  /* ==========================================================
+     HEADINGS
+     ========================================================== */
 
   h1,
   h2,
@@ -153,263 +250,744 @@
   h4,
   h5,
   h6 {
+    margin-top: 0;
+
     font-family: var(--font-heading);
-    letter-spacing: -0.01em;
-    line-height: 1.05;
-    /* Only force dark text on non-dark containers */
-    color: #1E293B;
-  }
 
-  /* Dark containers: let headings inherit white from parent */
-  [style*="#1E293B"] h1,
-  [style*="#1E293B"] h2,
-  [style*="#1E293B"] h3,
-  [style*="#0F172A"] h1,
-  [style*="#0F172A"] h2,
-  [style*="#0F172A"] h3,
-  footer h1,
-  footer h2,
-  footer h3,
-  footer h4,
-  footer h5,
-  footer h6 {
-    color: inherit;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .font-black,
-  .font-extrabold {
     font-weight: 700 !important;
+
+    letter-spacing: -0.02em;
+
+    line-height: 1.05;
+
+    color: #0F172A;
   }
 
-  /* ─── Lazy sections: skip rendering offscreen content ─── */
+
+  h1 {
+    letter-spacing: -0.035em;
+  }
+
+
+  h2 {
+    letter-spacing: -0.025em;
+  }
+
+
+  p {
+    color: #334155;
+  }
+
+
+  a {
+    color: inherit;
+
+    text-decoration: none;
+  }
+
+
+  button,
+  input,
+  textarea,
+  select {
+    font-family: inherit;
+  }
+
+
+  /* ==========================================================
+     SECTIONS
+     ========================================================== */
+
   section {
     position: relative;
+
     content-visibility: auto;
+
     contain-intrinsic-size: 0 800px;
   }
 
-  /* ─── Hero & navbar always visible (never deferred) ─── */
+
   #hero-section,
   nav {
     content-visibility: visible;
   }
 
-  /* ─── Images: prevent layout shift, smooth load ─── */
+
+  /* ==========================================================
+     IMAGES
+     ========================================================== */
+
   img {
     display: block;
+
     max-width: 100%;
-    /* Smoothly fade in lazy-loaded images */
+
+    height: auto;
+
     transition: opacity 0.3s ease;
   }
 
-  /* ─── Lazy images: fade in on load (handled per-component via onLoad) ─── */
+
   img[loading="lazy"].loaded {
     opacity: 1;
   }
 
-  /* ─── Focus visible — accessibility without layout flicker ─── */
+
+  /* ==========================================================
+     FOCUS
+     ========================================================== */
+
   :focus-visible {
     outline: 2px solid var(--primary-hex);
-    outline-offset: 2px;
+
+    outline-offset: 3px;
+
+    border-radius: 3px;
   }
+
 
   :focus:not(:focus-visible) {
     outline: none;
   }
+
+
+  /* ==========================================================
+     SELECTION
+     ========================================================== */
+
+  ::selection {
+    background: rgba(8, 102, 213, 0.18);
+
+    color: #0F172A;
+  }
+
+
+  /* ==========================================================
+     SCROLLBAR
+     ========================================================== */
+
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+
+
+  ::-webkit-scrollbar-track {
+    background: #F8FAFC;
+  }
+
+
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+
+    border-radius: 10px;
+
+    border: 2px solid #F8FAFC;
+  }
+
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0866D5;
+  }
 }
 
+
+/* ============================================================
+   UTILITIES
+   ============================================================ */
+
 @layer utilities {
+
+  /* ==========================================================
+     TEXT BALANCE
+     ========================================================== */
+
   .text-balance {
     text-wrap: balance;
   }
+
+
+  /* ==========================================================
+     SECTION PADDING
+     ========================================================== */
 
   .section-padding {
     @apply px-6 md:px-12 lg:px-24 py-20 md:py-32;
   }
 
+
+  /* ==========================================================
+     LARGE HEADINGS
+     ========================================================== */
+
   .heading-xl {
     @apply text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-medium;
+
     font-family: var(--font-heading);
-    letter-spacing: -0.03em;
-    line-height: 0.95;
+
+    letter-spacing: -0.045em;
+
+    line-height: 0.92;
+
+    color: #0F172A;
   }
+
 
   .heading-lg {
     @apply text-4xl md:text-5xl lg:text-6xl font-medium;
+
     font-family: var(--font-heading);
-    letter-spacing: -0.02em;
-    line-height: 1;
+
+    letter-spacing: -0.035em;
+
+    line-height: 0.98;
+
+    color: #0F172A;
   }
+
 
   .heading-md {
     @apply text-2xl md:text-3xl lg:text-4xl font-medium;
+
     font-family: var(--font-heading);
-    letter-spacing: -0.01em;
-    line-height: 1.1;
+
+    letter-spacing: -0.025em;
+
+    line-height: 1.08;
+
+    color: #0F172A;
   }
+
+
+  /* ==========================================================
+     BODY TEXT
+     ========================================================== */
 
   .body-lg {
     @apply text-lg md:text-xl;
+
     font-family: var(--font-body);
-    line-height: 1.6;
+
+    line-height: 1.65;
+
+    color: #475569;
   }
+
 
   .body-sm {
     @apply text-sm md:text-base;
+
     font-family: var(--font-body);
-    line-height: 1.5;
+
+    line-height: 1.55;
+
+    color: #64748B;
   }
 
-  /* ORANGE BRAND LINE */
+
+  /* ==========================================================
+     BLUE ACCENT LINE
+     ========================================================== */
+
   .accent-line {
     @apply w-14 h-1 rounded-full;
-    background: hsl(var(--primary));
+
+    background: #0866D5;
+
+    box-shadow:
+      0 2px 8px rgba(8, 102, 213, 0.18);
   }
+
+
+  /* ==========================================================
+     GRID
+     ========================================================== */
 
   .grid-editorial {
     @apply grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8;
   }
 
-  /* ORANGE TEXT GRADIENT */
+
+  /* ==========================================================
+     BLUE TEXT GRADIENT
+     ========================================================== */
+
   .text-gradient {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    background:
+      linear-gradient(135deg,
+        #0866D5 0%,
+        #0B78F0 100%);
+
     -webkit-background-clip: text;
+
     -webkit-text-fill-color: transparent;
+
     background-clip: text;
   }
 
-  /* CTA BUTTON */
+
+  /* ==========================================================
+     CTA GRADIENT
+     ========================================================== */
+
   .bg-gradient-cta {
-    background: linear-gradient(135deg, var(--primary-hex), var(--primary-hover-hex));
-    color: var(--white-color);
+    background:
+      linear-gradient(135deg,
+        #0866D5 0%,
+        #075BC1 100%);
+
+    color: #FFFFFF;
+
+    box-shadow:
+      0 8px 25px rgba(8, 102, 213, 0.18);
   }
 
-  /* PRIMARY BUTTON */
+
+  /* ==========================================================
+     PRIMARY BUTTON
+     ========================================================== */
+
   .drpaint-btn-primary {
-    background: var(--primary-hex);
-    color: var(--white-color);
-    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
-    border-radius: var(--radius);
-    font-weight: 600;
-    box-shadow: 0 10px 25px rgba(var(--primary-rgb), 0.15);
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #0866D5;
+
+    color: #FFFFFF;
+
+    border: 1px solid #0866D5;
+
+    border-radius: 6px;
+
+    font-weight: 700;
+
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      background 0.25s ease,
+      border-color 0.25s ease;
+
+    box-shadow:
+      0 8px 22px rgba(8, 102, 213, 0.18);
+
     will-change: transform;
   }
+
 
   .drpaint-btn-primary:hover {
-    background: var(--primary-hover-hex);
-    transform: translateY(-3px);
-    box-shadow: 0 16px 35px rgba(var(--primary-rgb), 0.25);
+    background: #0B78F0;
+
+    border-color: #0B78F0;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+      0 12px 30px rgba(8, 102, 213, 0.25);
   }
 
-  /* SECONDARY BUTTON */
+
+  .drpaint-btn-primary:active {
+    transform: translateY(0);
+  }
+
+
+  /* ==========================================================
+     SECONDARY BUTTON
+     ========================================================== */
+
   .drpaint-btn-secondary {
-    background: transparent;
-    color: var(--primary-hex);
-    border: 2px solid var(--primary-hex);
-    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
-    border-radius: var(--radius);
-    font-weight: 600;
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #FFFFFF;
+
+    color: #0866D5;
+
+    border: 2px solid #0866D5;
+
+    border-radius: 6px;
+
+    font-weight: 700;
+
+    transition:
+      transform 0.25s ease,
+      background 0.25s ease,
+      color 0.25s ease,
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
+
     will-change: transform;
   }
 
+
   .drpaint-btn-secondary:hover {
-    background: var(--primary-hex);
-    border-color: var(--primary-hex);
-    color: var(--white-color);
+    background: #0866D5;
+
+    border-color: #0866D5;
+
+    color: #FFFFFF;
+
     transform: translateY(-2px);
+
+    box-shadow:
+      0 8px 22px rgba(8, 102, 213, 0.18);
   }
 
-  /* CARD SYSTEM */
+
+  /* ==========================================================
+     CARD SYSTEM
+     ========================================================== */
+
   .drpaint-card {
-    background: var(--card-bg);
-    border: 1px solid var(--graphite-color);
-    box-shadow: 0 4px 20px rgba(var(--black-rgb), 0.08);
-    border-radius: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: #FFFFFF;
+
+    border: 1px solid #E2E8F0;
+
+    border-radius: 10px;
+
+    box-shadow:
+      0 4px 20px rgba(15, 23, 42, 0.06);
+
+    transition:
+      border-color 0.3s ease,
+      box-shadow 0.3s ease,
+      transform 0.3s ease;
   }
+
 
   .drpaint-card:hover {
-    border-color: var(--primary-hex);
-    box-shadow: 0 8px 32px rgba(var(--primary-rgb), 0.12);
+    border-color: #B7D3F5;
+
+    box-shadow:
+      0 10px 30px rgba(8, 102, 213, 0.10);
+
+    transform: translateY(-3px);
   }
+
+
+  /* ==========================================================
+     SHADOW
+     ========================================================== */
 
   .drpaint-shadow {
-    box-shadow: 0 4px 16px rgba(var(--black-rgb), 0.08);
+    box-shadow:
+      0 4px 18px rgba(15, 23, 42, 0.08);
   }
 
-  /* NAVBAR GLASS */
+
+  /* ==========================================================
+     NAVBAR
+     ========================================================== */
+
   .navbar-glass {
-    background: rgba(255, 255, 255, 0.95);
-    /* White with slight transparency */
+    background:
+      rgba(255, 255, 255, 0.96);
+
     backdrop-filter: blur(16px);
+
     -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--graphite-color);
-    box-shadow: 0 1px 12px rgba(var(--black-rgb), 0.06);
+
+    border-bottom:
+      1px solid #E2E8F0;
+
+    box-shadow:
+      0 2px 15px rgba(15, 23, 42, 0.06);
   }
 
-  /* HERO OVERLAY — keep dark for text contrast over hero images */
+
+  /* ==========================================================
+     NAVBAR LINKS
+     ========================================================== */
+
+  .navbar-glass a {
+    color: #0F172A;
+
+    transition:
+      color 0.2s ease,
+      opacity 0.2s ease;
+  }
+
+
+  .navbar-glass a:hover {
+    color: #0866D5;
+  }
+
+
+  /* ==========================================================
+     HERO OVERLAY
+     ========================================================== */
+
   .hero-overlay {
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.82), rgba(30, 41, 59, 0.75));
+    background:
+      linear-gradient(135deg,
+        rgba(255, 255, 255, 0.92) 0%,
+        rgba(248, 250, 252, 0.88) 45%,
+        rgba(255, 255, 255, 0.72) 100%);
   }
 
-  /* PREMIUM SECTION BACKGROUND GRADIENT */
+
+  /* ==========================================================
+     HERO BLUE GLOW
+     ========================================================== */
+
+  .hero-blue-glow {
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    background:
+      radial-gradient(circle,
+        rgba(8, 102, 213, 0.10) 0%,
+        rgba(8, 102, 213, 0.04) 35%,
+        transparent 70%);
+
+    pointer-events: none;
+
+    filter: blur(10px);
+  }
+
+
+  /* ==========================================================
+     PREMIUM LIGHT GRADIENT
+     ========================================================== */
+
   .bg-premium-gradient {
-    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--section-bg) 50%, var(--charcoal-bg) 100%);
+    background:
+      radial-gradient(circle at 85% 20%,
+        rgba(8, 102, 213, 0.05),
+        transparent 35%),
+      linear-gradient(135deg,
+        #FFFFFF 0%,
+        #F8FAFC 55%,
+        #F1F5F9 100%);
   }
 
-  /* ELEGANT GRADIENT DIVIDER */
+
+  /* ==========================================================
+     LIGHT SECTION
+     ========================================================== */
+
+  .section-light {
+    background: #FFFFFF;
+
+    color: #0F172A;
+  }
+
+
+  /* ==========================================================
+     ALTERNATE LIGHT SECTION
+     ========================================================== */
+
+  .section-light-alt {
+    background: #F8FAFC;
+
+    color: #0F172A;
+  }
+
+
+  /* ==========================================================
+     BLUE SECTION
+     ========================================================== */
+
+  .section-blue {
+    background:
+      linear-gradient(135deg,
+        #0866D5 0%,
+        #075BC1 100%);
+
+    color: #FFFFFF;
+  }
+
+
+  .section-blue h1,
+  .section-blue h2,
+  .section-blue h3,
+  .section-blue h4,
+  .section-blue h5,
+  .section-blue h6,
+  .section-blue p {
+    color: #FFFFFF;
+  }
+
+
+  /* ==========================================================
+     LIGHT BLUE SECTION
+     ========================================================== */
+
+  .section-light-blue {
+    background:
+      linear-gradient(135deg,
+        #EFF6FF 0%,
+        #F8FAFC 100%);
+
+    color: #0F172A;
+  }
+
+
+  /* ==========================================================
+     NAVY SECTION
+     ========================================================== */
+
+  .section-navy {
+    background: #001B36;
+
+    color: #FFFFFF;
+  }
+
+
+  .section-navy h1,
+  .section-navy h2,
+  .section-navy h3,
+  .section-navy h4,
+  .section-navy h5,
+  .section-navy h6 {
+    color: #FFFFFF;
+  }
+
+
+  .section-navy p {
+    color: #CBD5E1;
+  }
+
+
+  /* ==========================================================
+     PREMIUM DIVIDER
+     ========================================================== */
+
   .premium-divider {
     height: 1px;
-    background: linear-gradient(90deg,
-        transparent 0%,
-        rgba(var(--primary-rgb), 0.15) 20%,
-        rgba(var(--primary-rgb), 0.3) 50%,
-        rgba(var(--primary-rgb), 0.15) 80%,
-        transparent 100%);
+
     width: 100%;
-    /* No layout recalculation — height is fixed */
+
+    background:
+      linear-gradient(90deg,
+        transparent 0%,
+        rgba(8, 102, 213, 0.10) 15%,
+        rgba(8, 102, 213, 0.30) 50%,
+        rgba(8, 102, 213, 0.10) 85%,
+        transparent 100%);
+
     contain: strict;
   }
 
-  /* ORANGE ACCENTS */
-  .gold-accent {
-    color: hsl(var(--accent));
+
+  /* ==========================================================
+     BLUE ACCENTS
+     ========================================================== */
+
+  .blue-accent {
+    color: #0866D5;
   }
+
+
+  .gold-accent {
+    color: #0866D5;
+  }
+
 
   .brown-accent {
-    color: hsl(var(--secondary));
+    color: #075BC1;
   }
 
-  /* GPU-COMPOSITED LAYER HINT */
+
+  /* ==========================================================
+     BLUE ICON
+     ========================================================== */
+
+  .icon-blue {
+    color: #0866D5;
+
+    transition:
+      color 0.25s ease,
+      transform 0.25s ease;
+  }
+
+
+  .icon-blue:hover {
+    color: #0B78F0;
+
+    transform: translateY(-2px);
+  }
+
+
+  /* ==========================================================
+     BLUE GLOW
+     ========================================================== */
+
+  .blue-glow {
+    box-shadow:
+      0 8px 25px rgba(8, 102, 213, 0.14);
+  }
+
+
+  /* ==========================================================
+     BLUE BORDER
+     ========================================================== */
+
+  .blue-border {
+    border: 1px solid #0866D5;
+  }
+
+
+  /* ==========================================================
+     LIGHT BORDER
+     ========================================================== */
+
+  .subtle-border {
+    border: 1px solid #E2E8F0;
+  }
+
+
+  /* ==========================================================
+     GPU
+     ========================================================== */
+
   .will-change-gpu {
     will-change: transform, opacity;
+
     transform: translateZ(0);
+
     backface-visibility: hidden;
   }
 
-  /* ─── Super-smooth motion: only animate compositable properties ─── */
+
+  /* ==========================================================
+     SMOOTH HOVER
+     ========================================================== */
+
   .smooth-hover {
-    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transition:
+      transform 0.2s cubic-bezier(0.25,
+        0.46,
+        0.45,
+        0.94),
       opacity 0.2s ease;
+
     will-change: transform;
   }
+
 
   .smooth-hover:hover {
     transform: translateY(-4px);
   }
 
-  /* ULTRA-SMOOTH FLOATING ANIMATION */
+
+  /* ==========================================================
+     FLOAT
+     ========================================================== */
+
   @keyframes float {
 
     0%,
     100% {
-      transform: translateY(0px);
+      transform: translateY(0);
     }
 
     50% {
@@ -417,13 +995,20 @@
     }
   }
 
+
   .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation:
+      float 6s ease-in-out infinite;
+
     will-change: transform;
   }
 
-  /* SUBTLE ORANGE PULSE */
-  @keyframes orange-pulse {
+
+  /* ==========================================================
+     BLUE PULSE
+     ========================================================== */
+
+  @keyframes blue-pulse {
 
     0%,
     100% {
@@ -435,13 +1020,31 @@
     }
   }
 
-  .animate-gold-pulse {
-    animation: orange-pulse 3s ease-in-out infinite;
+
+  .animate-blue-pulse {
+    animation:
+      blue-pulse 3s ease-in-out infinite;
+
     will-change: opacity;
   }
 
-  /* SHIMMER FOR LOADING STATES */
+
+  /* Backward compatibility */
+
+  .animate-gold-pulse {
+    animation:
+      blue-pulse 3s ease-in-out infinite;
+
+    will-change: opacity;
+  }
+
+
+  /* ==========================================================
+     SHIMMER
+     ========================================================== */
+
   @keyframes shimmer {
+
     0% {
       background-position: -200% center;
     }
@@ -451,57 +1054,446 @@
     }
   }
 
+
   .animate-shimmer {
-    background: linear-gradient(90deg, #F1F5F9 25%, #E2E8F0 50%, #F1F5F9 75%);
+    background:
+      linear-gradient(90deg,
+        #F1F5F9 25%,
+        #E2E8F0 50%,
+        #F1F5F9 75%);
+
     background-size: 200% auto;
-    animation: shimmer 1.5s linear infinite;
+
+    animation:
+      shimmer 1.5s linear infinite;
+  }
+
+
+  /* ==========================================================
+     FORM INPUTS
+     ========================================================== */
+
+  .dark-input {
+    width: 100%;
+
+    background: #FFFFFF;
+
+    color: #0F172A;
+
+    border: 1px solid #CBD5E1;
+
+    border-radius: 6px;
+
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease,
+      background 0.2s ease;
+  }
+
+
+  .dark-input::placeholder {
+    color: #94A3B8;
+  }
+
+
+  .dark-input:focus {
+    outline: none;
+
+    background: #FFFFFF;
+
+    border-color: #0866D5;
+
+    box-shadow:
+      0 0 0 3px rgba(8, 102, 213, 0.10);
+  }
+
+
+  /* ==========================================================
+     FORM LABEL
+     ========================================================== */
+
+  .dark-label {
+    color: #334155;
+
+    font-weight: 600;
+  }
+
+
+  /* ==========================================================
+     CONTACT ICON
+     ========================================================== */
+
+  .contact-icon {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+      rgba(8, 102, 213, 0.08);
+
+    border:
+      1px solid rgba(8, 102, 213, 0.18);
+
+    color: #0866D5;
+
+    transition:
+      background 0.25s ease,
+      border-color 0.25s ease,
+      transform 0.25s ease;
+  }
+
+
+  .contact-icon:hover {
+    background:
+      rgba(8, 102, 213, 0.14);
+
+    border-color:
+      #0866D5;
+
+    transform: translateY(-2px);
+  }
+
+
+  /* ==========================================================
+     FOOTER
+     ========================================================== */
+
+  footer,
+  .footer-dark {
+    background: #001B36;
+
+    color: #FFFFFF;
+
+    border-top:
+      1px solid rgba(0, 0, 0, 0.05);
+  }
+
+
+  footer h1,
+  footer h2,
+  footer h3,
+  footer h4,
+  footer h5,
+  footer h6 {
+    color: #FFFFFF;
+  }
+
+
+  footer p {
+    color: #CBD5E1;
+  }
+
+
+  footer a {
+    color: #CBD5E1;
+
+    transition:
+      color 0.2s ease;
+  }
+
+
+  footer a:hover {
+    color: #0B78F0;
+  }
+
+
+  /* ==========================================================
+     FOOTER SOCIAL
+     ========================================================== */
+
+  .footer-social {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    background:
+      rgba(255, 255, 255, 0.08);
+
+    border:
+      1px solid rgba(255, 255, 255, 0.12);
+
+    color: #FFFFFF;
+
+    transition:
+      background 0.25s ease,
+      border-color 0.25s ease,
+      color 0.25s ease,
+      transform 0.25s ease;
+  }
+
+
+  .footer-social:hover {
+    background: #0866D5;
+
+    border-color: #0866D5;
+
+    color: #FFFFFF;
+
+    transform: translateY(-3px);
+  }
+
+
+  /* ==========================================================
+     FOOTER COPYRIGHT
+     ========================================================== */
+
+  .footer-copyright {
+    background: #00152A;
+
+    color: #FFFFFF;
+
+    border-top:
+      1px solid rgba(255, 255, 255, 0.06);
+  }
+
+
+  /* ==========================================================
+     STEP LABEL
+     ========================================================== */
+
+  .light-step-label {
+    color: #64748B;
+  }
+
+
+  /* ==========================================================
+     TEXT HELPERS
+     ========================================================== */
+
+  .text-brand-blue {
+    color: #0866D5;
+  }
+
+
+  .text-brand-blue-light {
+    color: #0B78F0;
+  }
+
+
+  .text-brand-dark {
+    color: #0F172A;
+  }
+
+
+  .text-brand-gray {
+    color: #475569;
+  }
+
+
+  .text-brand-muted {
+    color: #64748B;
+  }
+
+
+  /* ==========================================================
+     BACKGROUND HELPERS
+     ========================================================== */
+
+  .bg-dark {
+    background: #FFFFFF;
+  }
+
+
+  .bg-dark-alt {
+    background: #F8FAFC;
+  }
+
+
+  .bg-card-dark {
+    background: #FFFFFF;
+  }
+
+
+  .bg-navy {
+    background: #001B36;
+  }
+
+
+  .bg-deep-blue {
+    background: #002A52;
   }
 }
 
-/* ═══════════════════════════════════════════════════════════
-   LIGHT THEME GLOBAL OVERRIDES
-   Fix hardcoded dark-theme text colors on white background sections.
-   Only applies to sections that are NOT explicitly dark.
-   Dark contexts: .dark-section, [class*="bg-dark"], hero#hero-section
-   ═══════════════════════════════════════════════════════════ */
 
-/* Mark intentional dark containers so their text-white stays correct */
+/* ============================================================
+   LIGHT THEME OVERRIDES
+   ============================================================ */
+
+/*
+   IMPORTANT:
+   The website is LIGHT overall.
+
+   Dark backgrounds are ONLY intentional for:
+   - Hero overlays
+   - Navy CTA sections
+   - Footer
+   - Explicit .dark-section containers
+*/
+
+
+section:not(.dark-section):not(.section-navy):not(.section-blue) {
+  color: #0F172A;
+}
+
+
+/* ============================================================
+   WHITE TEXT IN INTENTIONAL DARK SECTIONS
+   ============================================================ */
+
 .dark-section,
-[style*="background: linear-gradient(135deg, var(--dark-bg)"],
-[style*="#0F172A"],
-[style*="#1E293B"],
-[style*="background: \"#1E293B\""] {
-  /* Dark containers: allow white text */
-  color: inherit;
+.section-navy,
+.section-blue,
+.footer-dark,
+footer {
+  color: #FFFFFF;
 }
 
-/* For all sections WITHOUT dark background: fix text-white to dark */
-section:not(#hero-section):not(.dark-section) .text-white,
-nav .text-foreground {
-  /* already handled by semantic classes */
-}
 
-/* Safeguard text-white inside dark gradient boxes */
-[style*="#1E293B"] .text-white,
-[style*="#0F172A"] .text-white,
-.dark-section .text-white {
+.dark-section h1,
+.dark-section h2,
+.dark-section h3,
+.dark-section h4,
+.dark-section h5,
+.dark-section h6,
+
+.section-navy h1,
+.section-navy h2,
+.section-navy h3,
+.section-navy h4,
+.section-navy h5,
+.section-navy h6,
+
+.section-blue h1,
+.section-blue h2,
+.section-blue h3,
+.section-blue h4,
+.section-blue h5,
+.section-blue h6,
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
   color: #FFFFFF !important;
 }
 
-/* Fix step indicator colors in hero form that are hardcoded white */
-.light-step-label {
-  color: var(--silver-color);
+
+/* ============================================================
+   DARK SECTION PARAGRAPHS
+   ============================================================ */
+
+.dark-section p,
+.section-navy p,
+.section-blue p,
+footer p {
+  color: #CBD5E1;
 }
 
-/* Footer keeps dark bg — override the BG variable alias */
-footer,
-.footer-dark {
-  background: #0F172A;
-  color: #F8FAFC;
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  .heading-xl {
+    letter-spacing: -0.035em;
+
+    line-height: 0.98;
+  }
+
+
+  .heading-lg {
+    letter-spacing: -0.025em;
+
+    line-height: 1;
+  }
+
+
+  .drpaint-card {
+    border-radius: 8px;
+  }
+
+
+  .hero-blue-glow {
+    width: 300px;
+
+    height: 300px;
+  }
 }
 
-footer .text-white,
-footer [class*="text-"],
-.footer-dark .text-white {
-  color: inherit;
-}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* ============================================================
+   PRINT
+   ============================================================ */
+
+@media print {
+
+  body {
+    background: #FFFFFF !important;
+
+    color: #000000 !important;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: #000000 !important;
+  }
+
+
+  nav,
+  footer {
+    display: none !important;
+  }
+}

@@ -737,7 +737,7 @@ const GetQuote = () => {
       .join(", ");
 
     const emailContent = `
-🚛 Los Carnales Junk Removal Quote Request
+🏠 Advanced Roofing & Exteriors Quote Request
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -757,14 +757,14 @@ ${formData.message}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ⏱️ Submitted: ${new Date().toLocaleString()}
-Locally Owned & Operated
+Quality Craftsmanship • Honest Service • Lasting Protection
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     `;
 
     try {
       try {
         const response = await fetch(
-          "https://formsubmit.co/ajax/info@loscarnalesjunk.com",
+          "https://formsubmit.co/ajax/advancedroofingomaha@gmail.com",
           {
             method: "POST",
             headers: {
@@ -772,7 +772,7 @@ Locally Owned & Operated
               Accept: "application/json",
             },
             body: JSON.stringify({
-              _subject: `🚛 Los Carnales Junk Removal Quote Request - ${formData.name}`,
+              _subject: `🏠 Advanced Roofing & Exteriors Quote Request - ${formData.name}`,
               name: formData.name,
               email: formData.email,
               phone: formData.phone,
@@ -811,7 +811,7 @@ Locally Owned & Operated
         console.log("FormSubmit failed, using mailto fallback");
       }
 
-      window.location.href = `mailto:${email}?subject=🚛 Los Carnales Junk Removal Quote Request - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
+      window.location.href = `mailto:${email}?subject=🏠 Advanced Roofing & Exteriors Quote Request - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
       setShowSuccess(true);
       setFormStep(1);
       setSelectedServices([]);

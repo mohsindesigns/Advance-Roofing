@@ -5,7 +5,7 @@ import {
 } from "framer-motion";
 import {
   ArrowRight,
-  Truck,
+  Shield,
   CheckCircle2,
   MapPin,
   ExternalLink
@@ -158,7 +158,7 @@ const Portfolio = () => {
                 className="inline-flex items-center gap-3 mb-4 md:mb-6 bg-primary/10 px-4 py-2 rounded-full border border-primary/20 shadow-sm"
               >
                 <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white shadow-lg shadow-primary/20">
-                  <Truck className="w-3 h-3" />
+                  <Shield className="w-3 h-3" />
                 </div>
                 <span className="text-primary uppercase tracking-[0.4em] text-[9px] md:text-[10px] font-black">
                   {section.badge}
@@ -214,7 +214,7 @@ const Portfolio = () => {
               Ready to see more?
             </h4>
             <p className="text-muted-foreground text-[10px] md:text-sm uppercase tracking-widest mt-1 font-body">
-              Browse our complete archive of heavy duty hauling and cleanout operations
+              Browse our complete gallery of residential, commercial, and storm restoration projects
             </p>
           </div>
           <motion.a
